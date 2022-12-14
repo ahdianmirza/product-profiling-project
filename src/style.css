@@ -15,13 +15,13 @@ body {
 }
 
 .container-pdf {
-    height: 1045px;
+    min-height: auto;
     width: 652px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
 
 .main {
@@ -38,11 +38,9 @@ body {
 .header {
     width: 100%;
     display: flex;
-    position: sticky;
     justify-content: space-between;
     margin-bottom: 10px;
     margin-top: 0;
-    z-index: 1;
 }
 
 .header .corner-border-left {
@@ -107,6 +105,7 @@ body {
     display: flex;
     align-items: center;
     z-index: 1;
+    margin-top: 20px;
 }
 
 .footer .left-content {
@@ -196,13 +195,25 @@ body {
     font-size: 12px;
 }
 
+.wise-content-container {
+    /* background-color: #F8C802; */
+    width: 38.6rem;
+    height: 11rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
 .small-circle {
     width: 7px;
     height: 7px;
     display: flex;
     position: absolute;
-    top: 16.5%;
-    left: 5.5%;
+    top: 7%;
+    left: 5%;
+    bottom: auto;
     border-radius: 50%;
     background-color: #9DC3E6;
 }
@@ -212,7 +223,7 @@ body {
     height: 2px;
     display: flex;
     position: absolute;
-    top: 16.7%;
+    top: 8.7%;
     left: 6%;
     background-color: #9DC3E6;
 }
@@ -223,16 +234,15 @@ body {
     border: solid 3px;
     display: flex;
     position: absolute;
-    top: 18.5%;
-    left: 3.6%;
+    bottom: 10%;
     color: #9DC3E6;
 }
 
 .wise {
     display: flex;
     position: absolute;
-    top: 15%;
-    right: 11%;
+    top: 2%;
+    right: 9%;
     z-index: 1;
     color: #ED462F;
     font-size: 32px;
@@ -242,7 +252,6 @@ body {
 .lightblue-box {
     background-color: #9DC3E6;
     width: 35rem;
-    margin-top: 30px;
 }
 
 .lightblue-box .five-list-content {
@@ -264,17 +273,18 @@ body {
 
 .quadrant-container {
     margin-top: 50px;
-    width: 450px;
-    height: 300px;
+    width: 30rem;
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hor-parameter.berbicara {
     display: flex;
     position: absolute;
-    bottom: 38.5%;
+    top: 3%;
     font-size: 20px;
     font-style: italic;
     color: #7F7F7F;
@@ -283,7 +293,7 @@ body {
 .hor-parameter.mengamati {
     display: flex;
     position: absolute;
-    bottom: 9.5%;
+    bottom: 3%;
     font-size: 20px;
     font-style: italic;
     color: #7F7F7F;
@@ -297,27 +307,26 @@ body {
     font-style: italic;
     color: #7F7F7F;
     align-items: flex-start;
-    bottom: 24%;
-    left: 10.5%;
+    right: 88%;
 }
 
 .ver-parameter.hubungan {
     display: flex;
     position: absolute;
     transform: rotate(90deg);
-    right: .1%;
-    bottom: 24%;
+    right: 1%;
     font-size: 20px;
     font-style: italic;
     color: #7F7F7F;
+    right: -15%;
 }
 
 .arrow-left svg {
     display: flex;
     position: absolute;
     transform: rotate(180deg);
-    bottom: 21.3%;
-    left: 20%;
+    bottom: 38.5%;
+    left: 10%;
 }
 
 .arrow-square-left {
@@ -326,23 +335,23 @@ body {
     display: flex;
     position: absolute;
     background-color: #D98642;
-    bottom: 24.6%;
-    left: 24%;
+    bottom: 48.5%;
+    left: 16%;
 }
 
 .arrow-left-text {
     display: flex;
     position: absolute;
-    bottom: 24.8%;
-    left: 26%;
+    bottom: 49.3%;
+    left: 18%;
     font-size: 11px;
 }
 
 .arrow-right svg {
     display: flex;
     position: absolute;
-    bottom: 22.8%;
-    right: 20%;
+    bottom: 42.8%;
+    right: 10%;
 }
 
 .arrow-square-right {
@@ -351,15 +360,15 @@ body {
     display: flex;
     position: absolute;
     background-color: #3979AE;
-    bottom: 24.6%;
-    right: 24%;
+    bottom: 48.5%;
+    right: 16%;
 }
 
 .arrow-right-text {
     display: flex;
     position: absolute;
-    bottom: 24.8%;
-    right: 30%;
+    bottom: 49.3%;
+    right: 23%;
     font-size: 11px;
     color: white;
 }
@@ -629,8 +638,8 @@ body {
 }
 
 .communication-potential {
-    margin-top: 50px;
-    width: 90%;
+    margin-top: 30px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -638,6 +647,8 @@ body {
 
 .communication-potential .communication-potential-chart {
     display: flex;
+    position: relative;
+    width: 22rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -664,8 +675,7 @@ body {
 .communication-potential .bar-chart {
     display: flex;
     position: absolute;
-    left: 4.7%;
-    bottom: 10.1%;
+    top: 16.5%;
 }
 
 .communication-potential .chartCard {
@@ -748,8 +758,10 @@ body {
 }
 
 .task-acc-potential {
-    width: 90%;
+    width: 100%;
+    height: 18rem;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -775,7 +787,7 @@ body {
     display: flex;
     position: absolute;
     left: 17%;
-    top: 3.7%;
+    top: 17%;
 }
 
 .task-acc-potential .chartCard {
@@ -911,8 +923,11 @@ body {
 }
 
 .adapt-potential {
-    margin-top: 29px;
+    margin-top: 28px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .adapt-potential .adapt-potential-chart {
@@ -947,9 +962,9 @@ body {
 .adapt-potential .bar-chart.blue {
     display: flex;
     position: absolute;
-    bottom: 32.4%;
-    left: 13.7%;
     background-color: transparent;
+    left: 9.7%;
+    top: 14%;
 }
 
 .adapt-potential .precentage-blue {
@@ -961,8 +976,8 @@ body {
     background-color: #4471CD;
     color: white;
     font-size: 14px;
-    bottom: 38.4%;
-    left: 20.5%;
+    top: 29.7%;
+    left: 17.5%;
 }
 
 .adapt-potential .precentage-orange {
@@ -974,8 +989,8 @@ body {
     background-color: #C8540B;
     color: white;
     font-size: 14px;
-    bottom: 38.4%;
-    left: 46.5%;
+    top: 29.7%;
+    left: 46%;
 }
 
 .adapt-potential .precentage-red {
@@ -987,23 +1002,23 @@ body {
     background-color: #F90505;
     color: white;
     font-size: 14px;
-    bottom: 38.4%;
-    right: 20.5%;
+    top: 29.7%;
+    right: 17.2%;
 }
 
 .adapt-potential .bar-chart.orange {
     display: flex;
     position: absolute;
-    bottom: 32.4%;
-    left: 39.6%;
+    left: 38.4%;
+    top: 14%;
     background-color: transparent;
 }
 
 .adapt-potential .bar-chart.red {
     display: flex;
     position: absolute;
-    bottom: 32.4%;
-    right: 13.7%;
+    right: 9.7%;
+    top: 14%;
     background-color: transparent;
 }
 
@@ -1145,14 +1160,15 @@ body {
 .self-lead-potential .self-lead-potential-chart {
     display: flex;
     width: 100%;
+    height: 19rem;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .self-lead-potential .bar-chart {
     display: flex;
     position: absolute;
-    left: 2%;
 }
 
 .self-lead-potential .chartCard {
@@ -1181,7 +1197,7 @@ body {
     flex-direction: column;
     height: 15rem;
     position: absolute;
-    left: 8%;
+    left: 3%;
 }
 
 .self-lead-potential .rating-box {
@@ -1241,8 +1257,10 @@ body {
 }
 
 .creativity-potential {
-    width: 90%;
+    width: 100%;
+    height: 16rem;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-around;
 }
@@ -1281,8 +1299,8 @@ body {
 .creativity-potential .bar-chart {
     display: flex;
     position: absolute;
-    right: 8%;
-    top: 3.8%;
+    bottom: 2%;
+    right: 6%;
 }
 
 .creativity-potential .chartCard {
@@ -1304,8 +1322,8 @@ body {
 .creativity-potential .chart-rating {
     display: flex;
     position: absolute;
-    right: 10%;
-    top: 20.8%;
+    bottom: 4%;
+    right: 8.3%;
 }
 
 .creativity-potential .rating-box {
@@ -1354,6 +1372,11 @@ body {
 
 .teamwork-potential {
     margin-top: 50px;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .teamwork-potential .teamwork-potential-chart {
@@ -1382,8 +1405,8 @@ body {
 .teamwork-potential .bar-chart {
     display: flex;
     position: absolute;
-    bottom: 28%;
-    left: 21.2%;
+    bottom: 1%;
+    left: 22%;
 }
 
 .teamwork-potential .chartCard {
@@ -1405,8 +1428,8 @@ body {
 .teamwork-potential .chart-rating {
     display: flex;
     position: absolute;
-    bottom: 28.6%;
-    left: 35%;
+    bottom: 3%;
+    left: 35.5%;
 }
 
 .teamwork-potential .rating-box {
@@ -1463,17 +1486,18 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
-.page-seven .bar-chart.lightbrown {
+.quadrant-employee .bar-chart.lightbrown {
     display: flex;
     position: absolute;
     top: 4.3%;
-    left: 29.4%;
+    left: 20%;
     background-color: transparent;
 }
 
-.page-seven .chartCard {
+.quadrant-employee .chartCard {
     height: 150px;
     width: 150px;
     display: flex;
@@ -1481,74 +1505,74 @@ body {
     justify-content: center;
 }
 
-.page-seven .chartBox {
+.quadrant-employee .chartBox {
     height: 150px;
     width: 150px;
     padding: 5px;
 }
 
-.page-seven .precentage-lightbrown {
+.quadrant-employee .precentage-lightbrown {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     font-size: 24px;
-    top: 10.2%;
-    left: 37.4%;
+    top: 11.5%;
+    left: 28%;
 }
 
-.page-seven .bar-chart.red {
+.quadrant-employee .bar-chart.red {
     display: flex;
     position: absolute;
-    top: 21.5%;
-    left: 5.1%;
+    top: 27%;
+    left: 1%;
     background-color: transparent;
 }
 
-.page-seven .precentage-red {
+.quadrant-employee .precentage-red {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     font-size: 24px;
-    top: 27.5%;
-    left: 13%;
+    top: 34%;
+    left: 9%;
 }
 
-.page-seven .bar-chart.lightblue {
+.quadrant-employee .bar-chart.lightblue {
     display: flex;
     position: absolute;
-    bottom: 38.3%;
-    left: 3.8%;
+    bottom: 24%;
+    left: 2%;
     background-color: transparent;
 }
 
-.page-seven .precentage-lightblue {
+.quadrant-employee .precentage-lightblue {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     font-size: 24px;
-    bottom: 44.4%;
-    left: 12%;
+    bottom: 31%;
+    left: 10%;
 }
 
-.page-seven .bar-chart.yellow {
+.quadrant-employee .bar-chart.yellow {
     display: flex;
     position: absolute;
-    bottom: 18.8%;
-    left: 17.9%;
+    bottom: 5%;
+    left: 19%;
     background-color: transparent;
 }
 
-.page-seven .precentage-yellow {
+.quadrant-employee .precentage-yellow {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     font-size: 24px;
-    bottom: 25%;
-    left: 26%;
+    bottom: 12%;
+    left: 27%;
 }
 
 .quadrant-chart .circle-chart-list {
@@ -1561,15 +1585,38 @@ body {
 }
 
 .circle-chart-item {
-    height: 150px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
     display: flex;
+    position: absolute;
+}
+
+.circle-chart-item.executives {
+    top: 15.5%;
+    left: 15%;
+}
+
+.circle-chart-item.self-employee {
+    top: 37%;
+    left: 20%;
+}
+
+.circle-chart-item.business-owner {
+    bottom: 37%;
+    left: 21.5%;
+}
+
+.circle-chart-item.investor {
+    bottom: 17%;
+    left: 25%;
 }
 
 .quadrant-chart .circle-chart {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    display: flex;
+    position: absolute;
 }
 
 .quadrant-chart .lightbrown {
@@ -1598,7 +1645,7 @@ body {
 .quadrant-employee .quadrant-line {
     display: flex;
     position: absolute;
-    margin: 20px 0 0 30px;
+    left: 1%;
     width: 38rem;
     height: 280px;
     border: solid 7px;
@@ -1667,8 +1714,8 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 50%;
-    bottom: 64.5%;
+    right: 4%;
+    top: 22.5%;
 }
 
 .quadrant-chart-info.executives .quadrant-chart-info-box {
@@ -1679,8 +1726,8 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 38%;
-    bottom: 52%;
+    right: 16%;
+    bottom: 42%;
 }
 
 .quadrant-chart-info.self-employee .quadrant-chart-info-box {
@@ -1692,8 +1739,8 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 37%;
-    bottom: 39%;
+    right: 13%;
+    bottom: 26%;
 }
 
 .quadrant-chart-info.business-owner .quadrant-chart-info-box {
@@ -1705,15 +1752,13 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 51%;
-    bottom: 20%;
+    right: 4%;
+    top: 86%;
 }
 
 .quadrant-chart-info.investor .quadrant-chart-info-box {
     height: 60px;
     background-color: white;
-    margin-top: 15px;
-    margin-left: 10px;
 }
 
 .quadrant-chart-info .quadrant-chart-info-box {
@@ -1781,6 +1826,17 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.pola-kepribadian {
+    background-color: #F4CDAD;
+    display: flex;
+}
+
+.pola-kepribadian-chart {
+    background-color: #FFC000;
+    width: 100%;
+    height: rem;
 }
 
 .analitis-tegas {
