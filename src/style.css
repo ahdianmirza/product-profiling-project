@@ -1,0 +1,2730 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-pdf {
+    height: 1045px;
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+
+.main {
+    display: flex;
+    width: 96%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.header .corner-border-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.header .corner-left {
+    width: 15px;
+    height: 35px;
+    border-top: solid 10px #002060;
+    border-left: solid 10px #002060;
+}
+
+.header .corner-right {
+    width: 15px;
+    height: 35px;
+    border-top: solid 10px #002060;
+    border-right: solid 10px #002060;
+}
+
+.header .conrner-border-logo {
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #002060;
+    width: 140px;
+    height: 30px;
+}
+
+.header .potensi-box {
+    background-color: #002060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 70px;
+    height: 25px;
+    color: white;
+    margin-right: 8px;
+    letter-spacing: 2px;
+}
+
+.header .wise-logo {
+    font-weight: bold;
+    color: #ED462F;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: #002060;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.footer .left-content {
+    display: flex;
+    background-color: #002060;
+    align-items: center;
+}
+
+.footer .contact-container {
+    width: 8rem;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .contact {
+    width: 6rem;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.footer .white-space {
+    margin-left: 5px;
+    width: 4px;
+    height: 28px;
+    background-color: white;
+}
+
+.footer .right-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5.5rem;
+}
+
+.footer .number-of-page-container {
+    width: 3rem;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .number-of-page {
+    width: 2rem;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.footer .right-content h5 {
+    color: white;
+}
+
+.title {
+    color: #012060;
+}
+
+.title h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.title span {
+    color: #FF0000;
+}
+
+.grey-box {
+    margin-top: 20px;
+    width: 38rem;
+    background-color: #F2F2F2;
+    text-align: justify;
+    padding: 5px;
+    line-height: 18px;
+}
+
+.grey-box p {
+    font-size: 12px;
+}
+
+.small-circle {
+    width: 7px;
+    height: 7px;
+    display: flex;
+    position: absolute;
+    top: 16.5%;
+    left: 5.5%;
+    border-radius: 50%;
+    background-color: #9DC3E6;
+}
+
+.line-circle {
+    width: 26rem;
+    height: 2px;
+    display: flex;
+    position: absolute;
+    top: 16.7%;
+    left: 6%;
+    background-color: #9DC3E6;
+}
+
+.line-square {
+    width: 36rem;
+    height: 7.3rem;
+    border: solid 3px;
+    display: flex;
+    position: absolute;
+    top: 18.5%;
+    left: 3.6%;
+    color: #9DC3E6;
+}
+
+.wise {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    right: 11%;
+    z-index: 1;
+    color: #ED462F;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.lightblue-box {
+    background-color: #9DC3E6;
+    width: 35rem;
+    margin-top: 30px;
+}
+
+.lightblue-box .five-list-content {
+    display: flex;
+    padding-left: 10px;
+}
+
+.lightblue-box .five-list-content .letter {
+    font-size: 14px;
+}
+
+.lightblue-box .five-list-content .arrow {
+    margin: 0 5px;
+}
+
+.lightblue-box .five-list-content .five-text {
+    font-size: 12px;
+}
+
+.quadrant-container {
+    margin-top: 50px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hor-parameter.berbicara {
+    display: flex;
+    position: absolute;
+    bottom: 38.5%;
+    font-size: 20px;
+    font-style: italic;
+    color: #7F7F7F;
+}
+
+.hor-parameter.mengamati {
+    display: flex;
+    position: absolute;
+    bottom: 9.5%;
+    font-size: 20px;
+    font-style: italic;
+    color: #7F7F7F;
+}
+
+.ver-parameter.tugas {
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 20px;
+    font-style: italic;
+    color: #7F7F7F;
+    align-items: flex-start;
+    bottom: 24%;
+    left: 10.5%;
+}
+
+.ver-parameter.hubungan {
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    right: .1%;
+    bottom: 24%;
+    font-size: 20px;
+    font-style: italic;
+    color: #7F7F7F;
+}
+
+.arrow-left svg {
+    display: flex;
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 21.3%;
+    left: 20%;
+}
+
+.arrow-square-left {
+    width: 150px;
+    height: 18px;
+    display: flex;
+    position: absolute;
+    background-color: #D98642;
+    bottom: 24.6%;
+    left: 24%;
+}
+
+.arrow-left-text {
+    display: flex;
+    position: absolute;
+    bottom: 24.8%;
+    left: 26%;
+    font-size: 11px;
+}
+
+.arrow-right svg {
+    display: flex;
+    position: absolute;
+    bottom: 22.8%;
+    right: 20%;
+}
+
+.arrow-square-right {
+    width: 150px;
+    height: 18px;
+    display: flex;
+    position: absolute;
+    background-color: #3979AE;
+    bottom: 24.6%;
+    right: 24%;
+}
+
+.arrow-right-text {
+    display: flex;
+    position: absolute;
+    bottom: 24.8%;
+    right: 30%;
+    font-size: 11px;
+    color: white;
+}
+
+.quadrant {
+    width: 400px;
+    height: 250px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border: solid 2px;
+}
+
+.quadrant-box {
+    width: 46%;
+    height: 46%;
+    border: solid 1px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.quadrant-box .sub-quadrant-text {
+    margin: 5px 0 20px 0;
+}
+
+.quadrant-box h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.quadrant-box p {
+    font-size: 12px;
+}
+
+.green {
+    background-color: #4BA750;
+}
+
+.red {
+    background-color: #EC4630;
+}
+
+.yellow {
+    background-color: #FFF935;
+}
+
+.blue {
+    background-color: #40B0EF;
+}
+
+.self-info-chart {
+    margin-top: 4px;
+    width: 39rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.self-info {
+    border: solid 2px;
+    padding: 5px;
+    width: 19rem;
+}
+
+.self-info td {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.self-info-chart .chart {
+    display: flex;
+}
+
+.name-advance-profile {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 13rem;
+    margin-top: 10px;
+    margin-bottom: 3px
+}
+
+.statistic {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic-table {
+    margin-top: 30px;
+}
+
+.statistic-table .rating {
+    width: 100%;
+}
+
+.statistic .rating-type {
+    display: flex;
+}
+
+.statistic .rating-box {
+    width: 20px;
+    height: 120px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.statistic .inverse {
+    flex-direction: row-reverse;
+}
+
+.statistic .rating-box h3 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.statistic .blue-low {
+    background-color: #98C2EA;
+}
+
+.statistic .blue-medium {
+    background-color: #2A75BC;
+    color: white;
+}
+
+.statistic .blue-moderat {
+    background-color: #40B1F0;
+    color: white;
+    line-height: 14px;
+}
+
+.statistic .blue-high {
+    background-color: #264C73;
+    color: white;
+}
+
+.statistic .red-low {
+    background-color: #F4CDAD;
+}
+
+.statistic .red-medium {
+    background-color: #C7582B;
+    color: white;
+}
+
+.statistic .red-moderat {
+    background-color: #ED7D31;
+    color: white;
+}
+
+.statistic .red-high {
+    background-color: #823E10;
+    color: white;
+}
+
+.statistic .text {
+    width: 22rem;
+    border: solid 1px;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.statistic-type {
+    width: 100%;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistic-type .blue-statistic {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.statistic-type .number-of-rating {
+    display: flex;
+    width: 120px;
+}
+
+.statistic-type .rating-box {
+    width: 30px;
+    height: 16px;
+}
+
+.statistic-type .blue-low {
+    background-color: #98C2EA;
+}
+
+.statistic-type .blue-medium {
+    background-color: #2A75BC;
+}
+
+.statistic-type .blue-moderat {
+    background-color: #40B1F0;
+}
+
+.statistic-type .blue-high {
+    background-color: #264C73;
+}
+
+.statistic-type .statistic-type-list {
+    font-size: 11px;
+}
+
+.statistic-type .blue-type-list {
+    margin-left: 10px;
+}
+
+.statistic-type .line {
+    width: 3px;
+    height: 18rem;
+    background-color: black;
+}
+
+.statistic-type .red-statistic {
+    display: flex;
+}
+
+.statistic-type .red-type-list {
+    margin-left: 5px;
+}
+
+.statistic-type .red-statistic {
+    margin-bottom: 3px;
+}
+
+.red-statistic-list .red-statistic {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.red-statistic-list .number-of-rating {
+    margin-left: 10px;
+    flex-direction: row-reverse;
+}
+
+.red-statistic-list .red-low {
+    background-color: #F4CDAD;
+}
+
+.red-statistic-list .red-medium {
+    background-color: #C7582B;
+}
+
+.red-statistic-list .red-moderat {
+    background-color: #ED7D31;
+}
+
+.red-statistic-list .red-high {
+    background-color: #823E10;
+}
+
+.communication-potential {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.communication-potential .communication-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.communication-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.communication-potential .chart {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.communication-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    left: 4.7%;
+    bottom: 10.1%;
+}
+
+.communication-potential .chartCard {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.communication-potential .chartCard .chartBox {
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.communication-potential .chart-rating {
+    display: flex;
+}
+
+.communication-potential .rating-box {
+    width: 4rem;
+    padding: 3px;
+    margin: 5px 3px 0 2px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.communication-potential .low {
+    background-color: #C28F00;
+}
+
+.communication-potential .medium {
+    background-color: #C65A0F;
+}
+
+.communication-potential .high {
+    background-color: #803D12;
+}
+
+.communication-potential .highest {
+    background-color: #BA0200;
+}
+
+.communication-potential .chart-info {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.communication-potential .chart-info .text {
+    margin: 5px;
+    color: white;
+    padding: 8px;
+}
+
+.communication-potential .chart-info .blue {
+    background-color: #012060;
+}
+
+.communication-potential .chart-info .orange {
+    background-color: #ED7D31;
+}
+
+.communication-potential .chart-info .text h4 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.communication-potential .chart-info .text p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+.task-acc-potential {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-acc-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    padding: 4px;
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.task-acc-potential .task-acc-potential-chart {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-acc-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    left: 17%;
+    top: 3.7%;
+}
+
+.task-acc-potential .chartCard {
+    width: 450px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-acc-potential .chartBox {
+    width: 450px;
+    height: 230px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.task-acc-potential .chart {
+    width: 450px;
+    height: 230px;
+}
+
+.task-acc-potential .chart-rating {
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    justify-content: flex-start;
+}
+
+.task-acc-potential .rating-box {
+    padding: 4px;
+    margin: 11px 0;
+    font-size: 6px;
+    width: 1.8rem;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-90deg);
+    color: white;
+}
+
+.chart-rating .low {
+    background-color: #C28F00;
+}
+
+.chart-rating .medium {
+    background-color: #C65A0F;
+}
+
+.chart-rating .high {
+    background-color: #803D12;
+}
+
+.chart-rating .highest {
+    background-color: #BA0200;
+}
+
+.task-acc-potential-info {
+    margin-top: 15px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-acc-potential-info .chart-info-box {
+    margin-bottom: 3px;
+    width: 38rem;
+    text-align: justify;
+    padding: 5px;
+}
+
+.task-acc-potential-info .chart-info-box h4 {
+    font-size: 12px;
+}
+
+.task-acc-potential-info .chart-info-box p {
+    font-size: 11px;
+}
+
+.task-acc-potential-info .red {
+    background-color: #FE0000;
+    color: white;
+}
+
+.task-acc-potential-info .yellow {
+    background-color: #FFC000;
+}
+
+.task-acc-potential-info .orange {
+    background-color: #ED7D31;
+}
+
+.task-acc-potential-info .lightblue {
+    background-color: #5A9BD5;
+}
+
+.task-acc-potential-info .darkgreen {
+    background-color: #538234;
+    color: white;
+}
+
+.task-acc-potential-info .darkblue {
+    background-color: #2D559B;
+    color: white;
+}
+
+.task-acc-potential-info .purple {
+    background-color: #7030A0;
+    color: white;
+}
+
+.task-acc-potential-info .lightgreen {
+    background-color: #70AD46;
+}
+
+.explanation .third {
+    margin-top: 5px;
+    width: 36rem;
+    line-height: 18px;
+}
+
+.more-explanation .grey-box {
+    width: 38rem;
+    margin: 10px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.more-explanation .grey-box ul {
+    list-style-type: decimal;
+    margin-left: 12px;
+}
+
+.adapt-potential {
+    margin-top: 29px;
+    width: 90%;
+}
+
+.adapt-potential .adapt-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adapt-potential .chart-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #012060;
+    color: white;
+    padding: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.adapt-potential .chart-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adapt-potential .chart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adapt-potential .bar-chart.blue {
+    display: flex;
+    position: absolute;
+    bottom: 32.4%;
+    left: 13.7%;
+    background-color: transparent;
+}
+
+.adapt-potential .precentage-blue {
+    width: 2.5rem;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: #4471CD;
+    color: white;
+    font-size: 14px;
+    bottom: 38.4%;
+    left: 20.5%;
+}
+
+.adapt-potential .precentage-orange {
+    width: 2.5rem;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: #C8540B;
+    color: white;
+    font-size: 14px;
+    bottom: 38.4%;
+    left: 46.5%;
+}
+
+.adapt-potential .precentage-red {
+    width: 2.5rem;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: #F90505;
+    color: white;
+    font-size: 14px;
+    bottom: 38.4%;
+    right: 20.5%;
+}
+
+.adapt-potential .bar-chart.orange {
+    display: flex;
+    position: absolute;
+    bottom: 32.4%;
+    left: 39.6%;
+    background-color: transparent;
+}
+
+.adapt-potential .bar-chart.red {
+    display: flex;
+    position: absolute;
+    bottom: 32.4%;
+    right: 13.7%;
+    background-color: transparent;
+}
+
+.adapt-potential .chartCard {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adapt-potential .chartBox {
+    width: 130px;
+    height: 130px;
+    padding: 5px;
+}
+
+.adapt-potential .chart {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    margin: 0 1rem 5px 1rem;
+}
+
+.adapt-potential .blue {
+    background-color: #315496;
+}
+
+.adapt-potential .orange {
+    background-color: #EF7E2F;
+}
+
+.adapt-potential .red {
+    background-color: #FD0104;
+}
+
+.adapt-potential .chart-name {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adapt-potential .square {
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+}
+
+.adapt-potential-info {
+    display: flex;
+    justify-content: center;
+}
+
+.adapt-potential-info .box-info {
+    width: 10rem;
+    margin: 10px 4px 0 4px;
+}
+
+.adapt-potential-info .box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.adapt-potential-info .box-info h4 {
+    font-size: 14px;
+}
+
+.adapt-potential-info .box-info p {
+    font-size: 11px;
+}
+
+.adapt-potential-info .blue {
+    color: white;
+}
+
+.adapt-potential-info .red {
+    color: white;
+}
+
+.adapt-potential .chart-rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: white;
+    font-weight: bold;
+}
+
+.adapt-potential .rating-box {
+    margin: 5px 1px 0 1px;
+    padding: 3px 10px;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.adapt-potential .rating-box p {
+    font-size: 11px;
+}
+
+.adapt-potential .number-of-rating {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.adapt-potential .number-of-rating .number {
+    width: 3rem;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-five .more-explanation .grey-box {
+    margin: 10px;
+}
+
+.self-lead-potential {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-lead-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 20px 0 10px 0;
+    font-size: 14px;
+}
+
+.self-lead-potential .self-lead-potential-chart {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-lead-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    left: 2%;
+}
+
+.self-lead-potential .chartCard {
+    width: 600px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.self-lead-potential .chartBox {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.self-lead-potential .chart {
+    width: 600px;
+    height: 280px;
+}
+
+.self-lead-potential .chart-rating {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    position: absolute;
+    left: 8%;
+}
+
+.self-lead-potential .rating-box {
+    padding: 4px;
+    margin: 16.5px 0;
+    font-size: 9px;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-90deg);
+    color: white;
+}
+
+.self-lead-potential-info {
+    width: 100%;
+}
+
+.self-lead-potential-info .chart-info-box-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.self-lead-potential-info .chart-info-box {
+    font-size: 11px;
+    padding: 5px;
+    color: white;
+    width: 11rem;
+}
+
+.self-lead-potential-info .brown {
+    background-color: #863B09;
+}
+
+.self-lead-potential-info .red {
+    background-color: #FE0000;
+}
+
+.self-lead-potential-info .lightblue {
+    background-color: #4473C5;
+}
+
+.self-lead-potential-info .purple {
+    background-color: #7030A0;
+}
+
+.self-lead-potential-info .darkblue {
+    background-color: #012060;
+}
+
+.self-lead-potential-info .image {
+    border: solid 1px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creativity-potential {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.creativity-potential .creativity-potential-image {
+    width: 150px;
+    height: 150px;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creativity-potential .creativity-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creativity-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.creativity-potential .chart {
+    width: 380px;
+    height: 200px;
+}
+
+.creativity-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    right: 8%;
+    top: 3.8%;
+}
+
+.creativity-potential .chartCard {
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creativity-potential .chartBox {
+    width: 380px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.creativity-potential .chart-rating {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 20.8%;
+}
+
+.creativity-potential .rating-box {
+    margin: 10px 1px 0 1px;
+    padding: 3px 10px;
+    width: 2.7rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
+}
+
+.creativity-potential-info {
+    margin-top: 30px;
+    width: 90%;
+}
+
+.creativity-potential-info .chart-info-box-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.creativity-potential-info .chart-info-box {
+    font-size: 11px;
+    padding: 5px;
+    color: white;
+    width: 8rem;
+    border-radius: 5px;
+}
+
+.creativity-potential-info .red {
+    background-color: #FE0000;
+}
+
+.creativity-potential-info .purple {
+    background-color: #7030A0;
+}
+
+.creativity-potential-info .lightbrown {
+    background-color: #C35C11;
+}
+
+.creativity-potential-info .darkbrown {
+    background-color: #833D0C;
+}
+
+.teamwork-potential {
+    margin-top: 50px;
+}
+
+.teamwork-potential .teamwork-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamwork-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    width: 9.5rem;
+}
+
+.teamwork-potential .chart {
+    width: 400px;
+    height: 200px;
+}
+
+.teamwork-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    bottom: 28%;
+    left: 21.2%;
+}
+
+.teamwork-potential .chartCard {
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamwork-potential .chartBox {
+    width: 380px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.teamwork-potential .chart-rating {
+    display: flex;
+    position: absolute;
+    bottom: 28.6%;
+    left: 35%;
+}
+
+.teamwork-potential .rating-box {
+    margin: 1px 1px 0 1px;
+    padding: 3px 11px;
+    width: 2.6rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+}
+
+.teamwork-potential-info {
+    margin-top: 30px;
+    width: 90%;
+}
+
+.teamwork-potential-info .chart-info-box-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.teamwork-potential-info .chart-info-box {
+    font-size: 11px;
+    padding: 5px;
+    color: white;
+    width: 11rem;
+}
+
+.teamwork-potential-info .lightblue {
+    background-color: #5A9BD5;
+    color: black;
+}
+
+.teamwork-potential-info .skyblue {
+    background-color: #4473C5;
+}
+
+.teamwork-potential-info .blue {
+    background-color: #2F5595;
+}
+
+.page-seven {
+    display: flex;
+    align-items: center;
+}
+
+.page-seven .main {
+    position: relative;
+}
+
+.quadrant-employee {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-seven .bar-chart.lightbrown {
+    display: flex;
+    position: absolute;
+    top: 4.3%;
+    left: 29.4%;
+    background-color: transparent;
+}
+
+.page-seven .chartCard {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-seven .chartBox {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+}
+
+.page-seven .precentage-lightbrown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 24px;
+    top: 10.2%;
+    left: 37.4%;
+}
+
+.page-seven .bar-chart.red {
+    display: flex;
+    position: absolute;
+    top: 21.5%;
+    left: 5.1%;
+    background-color: transparent;
+}
+
+.page-seven .precentage-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 24px;
+    top: 27.5%;
+    left: 13%;
+}
+
+.page-seven .bar-chart.lightblue {
+    display: flex;
+    position: absolute;
+    bottom: 38.3%;
+    left: 3.8%;
+    background-color: transparent;
+}
+
+.page-seven .precentage-lightblue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 24px;
+    bottom: 44.4%;
+    left: 12%;
+}
+
+.page-seven .bar-chart.yellow {
+    display: flex;
+    position: absolute;
+    bottom: 18.8%;
+    left: 17.9%;
+    background-color: transparent;
+}
+
+.page-seven .precentage-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 24px;
+    bottom: 25%;
+    left: 26%;
+}
+
+.quadrant-chart .circle-chart-list {
+    margin: 0 0 30px 0;
+    width: 150px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.circle-chart-item {
+    height: 150px;
+    width: 200px;
+    display: flex;
+}
+
+.quadrant-chart .circle-chart {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.quadrant-chart .lightbrown {
+    background-color: #C55B10;
+}
+
+.quadrant-chart .red {
+    background-color: #FE0002;
+}
+
+.quadrant-chart .lightblue {
+    background-color: #2E75B5;
+}
+
+.quadrant-chart .yellow {
+    background-color: #FFC000;
+}
+
+.quadrant-employee .circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.quadrant-employee .quadrant-line {
+    display: flex;
+    position: absolute;
+    margin: 20px 0 0 30px;
+    width: 38rem;
+    height: 280px;
+    border: solid 7px;
+    border-style: double;
+    border-color: #0C1E5C transparent transparent transparent;
+    border-radius: 65%/400px 400px 0 0;
+    transform: rotate(-90deg);
+}
+
+.quadrant-employee .top-circle-chart-item {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quadrant-employee .bottom-circle-chart-item {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.quadrant-chart .executives {
+    align-items: flex-end;
+    margin-left: 11.5rem;
+}
+
+.quadrant-chart .self-employee {
+    align-items: flex-end;
+    margin-left: 2rem;
+}
+
+.quadrant-chart .business-owner {
+    align-items: flex-start;
+    margin-left: 1.5rem;
+}
+
+.quadrant-chart .investor {
+    align-items: flex-start;
+    margin-left: 7rem;
+}
+
+.quadrant-chart-info-title.lightbrown {
+    background-color: transparent;
+    color: #EA7A3A;
+}
+
+.quadrant-chart-info-title.red {
+    background-color: transparent;
+    color: #FE0002;
+}
+
+.quadrant-chart-info-title.lightblue {
+    background-color: transparent;
+    color: #2E75B5;
+}
+
+.quadrant-chart-info-title.yellow {
+    background-color: transparent;
+    color: #FFC000;
+}
+
+.quadrant-chart-info.executives {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    bottom: 64.5%;
+}
+
+.quadrant-chart-info.executives .quadrant-chart-info-box {
+    background-color: white;
+}
+
+.quadrant-chart-info.self-employee {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 38%;
+    bottom: 52%;
+}
+
+.quadrant-chart-info.self-employee .quadrant-chart-info-box {
+    height: 60px;
+    background-color: white;
+}
+
+.quadrant-chart-info.business-owner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 37%;
+    bottom: 39%;
+}
+
+.quadrant-chart-info.business-owner .quadrant-chart-info-box {
+    height: 50px;
+    background-color: white;
+}
+
+.quadrant-chart-info.investor {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 51%;
+    bottom: 20%;
+}
+
+.quadrant-chart-info.investor .quadrant-chart-info-box {
+    height: 60px;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.quadrant-chart-info .quadrant-chart-info-box {
+    width: 300px;
+    height: 90px;
+    border: solid 3px #8C2D35;
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.quadrant-chart-info-list .quadrant-chart-info-box {
+    width: 300px;
+    height: 90px;
+    border: solid 3px #8C2D35;
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.page-seven .page-info-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    color: #0C1E5C;
+}
+
+.page-info-container span {
+    color: #8C2D35;
+}
+
+.page-eight .explanation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lightbrown-box {
+    width: 33rem;
+    line-height: 18px;
+    font-size: 11px;
+    background-color: #EC7E31;
+    color: white;
+    padding: 5px;
+}
+
+.explanation-box {
+    width: 33rem;
+    line-height: 18px;
+    font-size: 11px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.explanation-title {
+    width: 16rem;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    background-color: #F8C802;
+}
+
+.page-eleven .main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.analitis-tegas {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    bottom: 96.5%;
+}
+
+.analitis-tegas .text {
+    font-size: 10px;
+    text-align: justify;
+}
+
+.analitis-tegas .title {
+    font-size: 12px;
+    text-align: center;
+    background-color: #387AB7;
+    width: 7rem;
+    margin-top: 2px;
+    color: white;
+}
+
+.sangat-analitis.text {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: -2%;
+    left: 4%;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.title-pemikir {
+    font-size: 12px;
+    text-align: center;
+    width: 7rem;
+    letter-spacing: 2px;
+    display: flex;
+    position: absolute;
+    left: 17%;
+    top: 4.5%;
+    transform: rotate(-38deg);
+}
+
+.sangat-analitis.title {
+    font-size: 12px;
+    text-align: center;
+    background-color: #F9C12A;
+    width: 7rem;
+    transform: rotate(-38deg);
+    color: black;
+    display: flex;
+    justify-content: center;
+    top: 6%;
+    left: 19.5%;
+    position: absolute;
+}
+
+.sangat-analitis .title-pemikir span {
+    font-size: 20px;
+}
+
+.mendukung-analitis.text {
+    width: 12rem;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-start;
+    bottom: 75.8%;
+    right: 87%;
+    font-size: 10px;
+    text-align: justify;
+    width: 5rem;
+}
+
+.mendukung-analitis.title {
+    font-size: 9px;
+    text-align: center;
+    background-color: #83AA51;
+    padding: 3px;
+    width: 6.8rem;
+    transform: rotate(-90deg);
+    color: black;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 10%;
+    top: 16.5%;
+}
+
+.sangat-mendukung.text {
+    font-size: 10px;
+    text-align: justify;
+    width: 8rem;
+    display: flex;
+    position: absolute;
+    bottom: 63%;
+    right: 80%;
+}
+
+.sangat-mendukung.title {
+    font-size: 10px;
+    text-align: center;
+    background-color: #3F5622;
+    padding: 3px;
+    width: 8rem;
+    margin-left: 10rem;
+    transform: rotate(38deg);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 70%;
+    right: 62%;
+    color: white;
+}
+
+.title-sangat-mendukung {
+    color: #3F5622;
+    display: flex;
+    position: absolute;
+    top: 31%;
+    left: 21%;
+    transform: rotate(38deg);
+    font-size: 14px;
+}
+
+.mendukung-mempengaruhi.text {
+    font-size: 10px;
+    text-align: justify;
+    width: 13rem;
+    display: flex;
+    position: absolute;
+    bottom: 61%;
+    right: 33%;
+}
+
+.mendukung-mempengaruhi.title {
+    font-size: 9px;
+    text-align: center;
+    background-color: #845811;
+    padding: 3px;
+    width: 9rem;
+    margin-left: 10rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 65.2%;
+    right: 38%;
+    color: white;
+}
+
+.sangat-mempengaruhi.text {
+    font-size: 10px;
+    text-align: justify;
+    width: 8rem;
+    display: flex;
+    position: absolute;
+    bottom: 64%;
+    right: 1%;
+}
+
+.sangat-mempengaruhi.title {
+    font-size: 10px;
+    text-align: center;
+    background-color: #B15B2A;
+    padding: 3px;
+    width: 8rem;
+    transform: rotate(-38deg);
+    margin-left: 10rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 69.8%;
+    right: 17.5%;
+    color: white;
+}
+
+.title-sangat-mempengaruhi {
+    display: flex;
+    font-size: 14px;
+    position: absolute;
+    color: #B15B2A;
+    bottom: 67.5%;
+    right: 22%;
+    transform: rotate(-38deg);
+}
+
+.tegas-mempengaruhi.text {
+    font-size: 10px;
+    text-align: justify;
+    width: 6rem;
+    display: flex;
+    position: absolute;
+    bottom: 75%;
+    right: 1%;
+}
+
+.tegas-mempengaruhi.title {
+    font-size: 8.5px;
+    text-align: center;
+    background-color: #EC4734;
+    padding: 3px;
+    width: 6.7rem;
+    transform: rotate(90deg);
+    margin-left: 10rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 81%;
+    right: 10.2%;
+    color: white;
+}
+
+.sangat-tegas.text {
+    font-size: 10px;
+    text-align: justify;
+    width: 7rem;
+    display: flex;
+    position: absolute;
+    bottom: 92%;
+    right: 1%;
+}
+
+.sangat-tegas.title {
+    font-size: 11px;
+    text-align: center;
+    background-color: #002765;
+    padding: 3px;
+    width: 5rem;
+    transform: rotate(38deg);
+    margin-left: 10rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 92%;
+    right: 21%;
+    color: white;
+}
+
+.title-sangat-tegas {
+    display: flex;
+    position: absolute;
+    color: #002765;
+    right: 20%;
+    top: 4%;
+    transform: rotate(38deg);
+}
+
+.m-or-d {
+    display: flex;
+    position: absolute;
+    top: 4.2%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.m {
+    display: flex;
+    position: absolute;
+    top: 8%;
+    left: 31%;
+    font-size: 12px;
+    transform: rotate(-38deg);
+    font-weight: bold;
+}
+
+.p-or-m {
+    display: flex;
+    position: absolute;
+    top: 17%;
+    left: 22.3%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.p {
+    display: flex;
+    position: absolute;
+    top: 26%;
+    left: 30%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.s-or-p {
+    display: flex;
+    position: absolute;
+    top: 30.5%;
+    left: 48.5%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.s {
+    display: flex;
+    position: absolute;
+    top: 26%;
+    right: 30%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.d-or-s {
+    display: flex;
+    position: absolute;
+    top: 17%;
+    right: 22.3%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.d {
+    display: flex;
+    position: absolute;
+    top: 8%;
+    right: 31%;
+    font-size: 12px;
+    transform: rotate(38deg);
+    font-weight: bold;
+}
+
+.d-m-star {
+    display: flex;
+    position: absolute;
+    top: 7.3%;
+    right: 45.3%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.s-p-star {
+    display: flex;
+    position: absolute;
+    top: 27.4%;
+    right: 42.5%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.m-d-star {
+    display: flex;
+    position: absolute;
+    top: 7.3%;
+    right: 51%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.p-s-star {
+    display: flex;
+    position: absolute;
+    top: 27.4%;
+    right: 50.5%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.m-d {
+    display: flex;
+    position: absolute;
+    top: 9.3%;
+    left: 37%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.s-p {
+    display: flex;
+    position: absolute;
+    top: 25.4%;
+    right: 36%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.m-p {
+    display: flex;
+    position: absolute;
+    top: 12%;
+    left: 31.5%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.s-d {
+    display: flex;
+    position: absolute;
+    top: 22.4%;
+    right: 30.5%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.m-p-star {
+    display: flex;
+    position: absolute;
+    top: 16%;
+    left: 29%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.s-d-star {
+    display: flex;
+    position: absolute;
+    top: 17.8%;
+    right: 28.5%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.p-m-star {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.d-s-star {
+    display: flex;
+    position: absolute;
+    top: 14.4%;
+    right: 28.5%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.p-m {
+    display: flex;
+    position: absolute;
+    top: 23.3%;
+    left: 33%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.d-s {
+    display: flex;
+    position: absolute;
+    top: 11%;
+    right: 32.8%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.p-s {
+    display: flex;
+    position: absolute;
+    top: 26%;
+    left: 38.4%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.d-m {
+    display: flex;
+    position: absolute;
+    top: 8.3%;
+    right: 39%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.d-m-star-s {
+    display: flex;
+    position: absolute;
+    top: 9.9%;
+    right: 45.8%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.s-p-star-d {
+    display: flex;
+    position: absolute;
+    top: 24.2%;
+    right: 44.5%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.m-d-star-p {
+    display: flex;
+    position: absolute;
+    top: 9.9%;
+    left: 45.8%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.s-p-d {
+    display: flex;
+    position: absolute;
+    top: 22.4%;
+    right: 40%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.m-d-p {
+    display: flex;
+    position: absolute;
+    top: 11%;
+    left: 41.2%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.s-d-p {
+    display: flex;
+    position: absolute;
+    top: 20.5%;
+    right: 36.2%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.m-p-d {
+    display: flex;
+    position: absolute;
+    top: 13.4%;
+    left: 36.5%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.s-d-star-p {
+    display: flex;
+    position: absolute;
+    top: 17.8%;
+    right: 34.2%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.m-p-star-d {
+    display: flex;
+    position: absolute;
+    top: 16.4%;
+    left: 34.6%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.d-s-star-m {
+    display: flex;
+    position: absolute;
+    top: 15.3%;
+    right: 34.2%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.p-m-star-s {
+    display: flex;
+    position: absolute;
+    top: 18.8%;
+    left: 34.6%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.d-s-m {
+    display: flex;
+    position: absolute;
+    top: 12.8%;
+    right: 36.8%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.p-m-s {
+    display: flex;
+    position: absolute;
+    top: 21.4%;
+    left: 37.4%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.d-m-s {
+    display: flex;
+    position: absolute;
+    top: 10.8%;
+    right: 41%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.p-s-m {
+    display: flex;
+    position: absolute;
+    top: 23.4%;
+    left: 40.8%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.p-s-star-m {
+    display: flex;
+    position: absolute;
+    top: 24.2%;
+    right: 50.5%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.d-m-p {
+    display: flex;
+    position: absolute;
+    top: 12.2%;
+    right: 46.3%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.s-p-m {
+    display: flex;
+    position: absolute;
+    top: 22%;
+    right: 46.5%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.m-d-s {
+    display: flex;
+    position: absolute;
+    top: 12.2%;
+    left: 46.8%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.s-m-p {
+    display: flex;
+    position: absolute;
+    top: 21.4%;
+    right: 43%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.m-s-d {
+    display: flex;
+    position: absolute;
+    top: 13%;
+    left: 43.8%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.s-m-d {
+    display: flex;
+    position: absolute;
+    top: 19.8%;
+    right: 40%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.s-d-m {
+    display: flex;
+    position: absolute;
+    top: 17.8%;
+    right: 39%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.m-s-p {
+    display: flex;
+    position: absolute;
+    top: 14.3%;
+    left: 41.3%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.d-s-p {
+    display: flex;
+    position: absolute;
+    top: 16%;
+    right: 39%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.m-p-s {
+    display: flex;
+    position: absolute;
+    top: 16.5%;
+    left: 39.8%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.d-p-s {
+    display: flex;
+    position: absolute;
+    top: 14.4%;
+    right: 40.5%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.p-m-d {
+    display: flex;
+    position: absolute;
+    top: 18.3%;
+    left: 39.8%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.d-p-m {
+    display: flex;
+    position: absolute;
+    top: 13%;
+    right: 43%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.p-d-m {
+    display: flex;
+    position: absolute;
+    top: 19.8%;
+    left: 40.8%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.p-d-s {
+    display: flex;
+    position: absolute;
+    top: 21%;
+    left: 43.6%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.p-s-d {
+    display: flex;
+    position: absolute;
+    top: 22%;
+    left: 47.6%;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.p-d {
+    display: flex;
+    position: absolute;
+    top: 19.4%;
+    left: 47.8%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.s-m {
+    display: flex;
+    position: absolute;
+    top: 19.4%;
+    right: 47%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.d-p {
+    display: flex;
+    position: absolute;
+    top: 14.4%;
+    right: 47%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.m-s {
+    display: flex;
+    position: absolute;
+    top: 14.4%;
+    left: 47.4%;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.pola-kepribadian {
+    width: 32rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bfv-analysis {
+    width: 38rem;
+    line-height: 18px;
+    text-align: justify;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.bfv-analysis .bfv-analysis-title {
+    padding: 2px;
+    background-color: #FFF2CD;
+    width: 6rem;
+}
+
+.bfv-analysis table {
+    margin-top: 8px;
+    width: 100%;
+    background-color: #FFF2CD;
+}
+
+.bfv-analysis table,
+.bfv-analysis td {
+    font-size: 7.5px;
+    border: solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #FFF2CD;
+}
+
+.bfv-analysis .grey-box {
+    margin-top: 10px;
+}
+
+.bfv-analysis .grey-box p {
+    font-size: 11px;
+}
+
+.page-twelve .main {
+    width: 100%;
+}
+
+.al-quran-potential {
+    width: 38rem;
+    line-height: 18px;
+    text-align: justify;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.al-quran-potential .al-quran-potential-title {
+    padding: 2px;
+    background-color: #D15408;
+    width: 13rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.al-quran-potential .al-quran-potential-content {
+    background-color: #AFABAA;
+    padding: 5px;
+    line-height: 24px;
+}
+
+.al-quran-potential .al-quran-potential-table table {
+    margin-top: 8px;
+    width: 100%;
+    font-size: 10px;
+}
+
+.al-quran-potential .al-quran-potential-table table,
+.al-quran-potential-table td {
+    border: solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #95C1E8;
+}
+
+.al-quran-potential .al-quran-potential-table tr:nth-child(1) td {
+    background-color: white;
+}
+
+.al-quran-potential .al-quran-potential-table tr:nth-child(1) td:nth-child(1) {
+    border-top: hidden;
+    border-left: hidden;
+    background-color: white;
+}
+
+.al-quran-potential .al-quran-potential-table tr:nth-child(2) td:nth-child(9) {
+    background-color: white;
+}
+
+.al-quran-potential .al-quran-potential-table tr:nth-child(2) td:nth-child(1),
+.al-quran-potential-table tr:nth-child(2) td:nth-child(5) {
+    background-color: white;
+}
+
+.al-quran-potential .al-quran-potential-table tr:nth-child(2) td:nth-child(7),
+.al-quran-potential-table tr:nth-child(3) td:nth-child(7) {
+    background-color: white;
+}
+
+.al-quran-potential .al-quran-potential-table tr:nth-child(3) td:nth-child(1) {
+    background-color: white;
+}
+
+.al-quran-potential .second-table tr:nth-child(2) td:nth-child(9) {
+    background-color: #95C1E8;
+}
+
+.al-quran-potential .second-table tr:nth-child(2) td:nth-child(5) {
+    background-color: #95C1E8;
+}
+
+.al-quran-potential .second-table tr:nth-child(2) td:nth-child(7),
+.second-table tr:nth-child(3) td:nth-child(7) {
+    background-color: #95C1E8;
+}
+
+.al-quran-potential .second-table table,
+.second-table td {
+    background-color: #95C1E8;
+}
+
+.al-quran-potential .al-quran-potential-table-info {
+    background-color: #FBAC7E;
+    padding: 5px;
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+.al-quran-potential .table-info-box {
+    border: solid 2px #031D5B;
+    padding: 5px;
+    line-height: 14px;
+    margin-top: 5px;
+}
+
+.al-quran-potential .table-info-box.odd {
+    background-color: #FFF1CA;
+}
+
+.al-quran-potential .table-info-box.even {
+    background-color: #FFE699;
+}
