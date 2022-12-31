@@ -128,23 +128,27 @@ function drawChart3() {
 function drawChart4() {
     // setup 
     const data = {
-      labels: ['Individual Leadership', 'Judgement', 'Risk Taking', 'Relating', 'Strategic Leadership'],
+      labels: ['Individual Leadership', 'Strategic Leadership', 'Managerial Leadership', 'Coaching', 'Judgement', 'Risk Taking', 'Organizational Awareness'],
       datasets: [{
         label: 'Leadership Potential',
-        data: [50, 70, 55, 70, 55],
+        data: [50, 70, 55, 70, 55, 50, 75],
         backgroundColor: [
-          'rgba(134, 59, 9, 1)',
-          'rgba(254, 0, 0, 1)',
-          'rgba(68, 115, 197, 1)',
-          'rgba(1, 32, 96, 1)',
-          'rgba(112, 48, 160, 1)'
+          'rgba(237, 125, 49, 1)',
+          'rgba(255, 0, 0, 1)',
+          'rgba(132, 60, 12, 1)',
+          'rgba(0, 176, 240, 1)',
+          'rgba(84, 130, 53, 1)',
+          'rgba(112, 48, 160, 1)',
+          'rgba(47, 85, 151, 1)'
         ],
         borderColor: [
-          'rgba(134, 59, 9, 0.3)',
-          'rgba(254, 0, 0, 0.3)',
-          'rgba(68, 115, 197, 0.3)',
-          'rgba(1, 32, 96, 0.3)',
-          'rgba(112, 48, 160, 0.3)'
+          'rgba(237, 125, 49, 0.3)',
+          'rgba(255, 0, 0, 0.3)',
+          'rgba(132, 60, 12, 0.3)',
+          'rgba(0, 176, 240, 0.3)',
+          'rgba(84, 130, 53, 0.3)',
+          'rgba(112, 48, 160, 0.3)',
+          'rgba(47, 85, 151, 0.3)'
         ],
         borderWidth: 2
       }]
@@ -531,6 +535,162 @@ function drawChart13() {
     );
 }
 
+function drawChart14() {
+    // setup 
+    const data = {
+      labels: ['Safety', 'Planing Organizing', 'Negotiation', 'Directing'],
+      datasets: [{
+        label: 'Creativity Potential',
+        data: [75, 60, 50, 60],
+        backgroundColor: [
+          'rgba(0, 32, 96, 1)',
+          'rgba(0, 32, 96, 1)',
+          'rgba(0, 32, 96, 1)',
+          'rgba(0, 32, 96, 1)'
+        ],
+        borderColor: [
+          'rgba(0, 32, 96, 0.3)',
+          'rgba(0, 32, 96, 0.3)',
+          'rgba(0, 32, 96, 0.3)',
+          'rgba(0, 32, 96, 0.3)'
+        ],
+        borderWidth: 2
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        plugins: {
+        legend: {
+            display: false
+        }
+    },
+        indexAxis: "y",
+        scales: {
+          x: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 25,
+            },
+          },
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart13'),
+      config
+    );
+}
+
+function drawChart15() {
+  const data = {
+      labels: ['Resillience', 'Persisting', 'Detailing'],
+      datasets: [{
+        label: 'Leadership Potential',
+        data: [50, 55, 60],
+        backgroundColor: [
+          'rgba(237, 125, 49, 1)',
+          'rgba(255, 0, 0, 1)',
+          'rgba(132, 60, 12, 1)'
+        ],
+        borderColor: [
+          'rgba(237, 125, 49, 0.3)',
+          'rgba(255, 0, 0, 0.3)',
+          'rgba(132, 60, 12, 0.3)'
+        ],
+        borderWidth: 2
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+        legend: {
+            display: false
+        }
+    },
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 25,
+            }
+          }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart14'),
+      config
+    );
+}
+
+function drawChart16() {
+  const data = {
+      labels: ['Customer Service', 'Image & Impact', 'Integrity'],
+      datasets: [{
+        label: 'Leadership Potential',
+        data: [55, 48, 75],
+        backgroundColor: [
+          'rgba(237, 125, 49, 1)',
+          'rgba(255, 0, 0, 1)',
+          'rgba(132, 60, 12, 1)'
+        ],
+        borderColor: [
+          'rgba(237, 125, 49, 0.3)',
+          'rgba(255, 0, 0, 0.3)',
+          'rgba(132, 60, 12, 0.3)'
+        ],
+        borderWidth: 2
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+        legend: {
+            display: false
+        }
+    },
+        scales: {
+          y: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 25,
+            }
+          }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart15'),
+      config
+    );
+}
+
 window.onload = function() {
     Chart.defaults.font.size = 10;
 
@@ -546,5 +706,8 @@ window.onload = function() {
     drawChart11();
     drawChart12();
     drawChart13();
+    drawChart14();
+    drawChart15();
+    drawChart16();
 }
 

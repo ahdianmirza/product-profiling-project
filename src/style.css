@@ -1200,9 +1200,9 @@ body {
 
 .self-lead-potential .rating-box {
     padding: 4px;
-    margin: 16.5px 0;
+    margin: 14px 0;
     font-size: 9px;
-    width: 2.5rem;
+    width: 2.3rem;
     display: flex;
     justify-content: center;
     transform: rotate(-90deg);
@@ -1216,18 +1216,24 @@ body {
 .self-lead-potential-info .chart-info-box-list {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 15px;
+    min-height: auto;
 }
 
 .self-lead-potential-info .chart-info-box {
     font-size: 11px;
     padding: 5px;
     color: white;
-    width: 11rem;
+    width: 11.5rem;
+    line-height: 16px;
+}
+
+.self-lead-potential-info .lightbrown {
+    background-color: #ED7D31;
 }
 
 .self-lead-potential-info .brown {
-    background-color: #863B09;
+    background-color: #843C0C;
 }
 
 .self-lead-potential-info .red {
@@ -1238,25 +1244,27 @@ body {
     background-color: #4473C5;
 }
 
+.self-lead-potential-info .skyblue {
+    background-color: #00B0F0;
+    color: black;
+}
+
 .self-lead-potential-info .purple {
     background-color: #7030A0;
 }
 
 .self-lead-potential-info .darkblue {
-    background-color: #012060;
+    background-color: #2F5597;
 }
 
-.self-lead-potential-info .image {
-    border: solid 1px;
+.self-lead-potential-info .darkgreen {
+    background-color: #548235;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .creativity-potential {
     width: 100%;
-    height: 16rem;
+    height: 18rem;
     display: flex;
     position: relative;
     align-items: center;
@@ -1264,12 +1272,16 @@ body {
 }
 
 .creativity-potential .creativity-potential-image {
-    width: 150px;
-    height: 150px;
-    border: solid 1px;
+    width: 160px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.creativity-potential .creativity-potential-image img {
+    width: 160px;
+    height: 180px;
 }
 
 .creativity-potential .creativity-potential-chart {
@@ -1285,24 +1297,23 @@ body {
     justify-content: center;
     align-items: center;
     padding: 4px;
-    margin-bottom: 5px;
     font-size: 14px;
 }
 
 .creativity-potential .chart {
-    width: 380px;
+    width: 400px;
     height: 200px;
 }
 
 .creativity-potential .bar-chart {
     display: flex;
     position: absolute;
-    bottom: 2%;
-    right: 6%;
+    bottom: 7%;
+    right: 3%;
 }
 
 .creativity-potential .chartCard {
-    width: 360px;
+    width: 400px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -1310,7 +1321,7 @@ body {
 }
 
 .creativity-potential .chartBox {
-    width: 380px;
+    width: 400px;
     height: 200px;
     padding: 5px;
     border-radius: 10px;
@@ -1320,14 +1331,14 @@ body {
 .creativity-potential .chart-rating {
     display: flex;
     position: absolute;
-    bottom: 4%;
-    right: 8.3%;
+    bottom: 1%;
+    right: 5.8%;
 }
 
 .creativity-potential .rating-box {
-    margin: 10px 1px 0 1px;
+    margin: 10px 1.5px 0 1.5px;
     padding: 3px 10px;
-    width: 2.7rem;
+    width: 3.2rem;
     display: flex;
     justify-content: center;
     color: white;
@@ -1336,7 +1347,7 @@ body {
 
 .creativity-potential-info {
     margin-top: 30px;
-    width: 90%;
+    width: 98%;
 }
 
 .creativity-potential-info .chart-info-box-list {
@@ -1371,7 +1382,7 @@ body {
 .teamwork-potential {
     margin-top: 50px;
     width: 100%;
-    height: 15rem;
+    height: 16.5rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1396,19 +1407,34 @@ body {
 }
 
 .teamwork-potential .chart {
-    width: 400px;
-    height: 200px;
+    width: 430px;
+    height: 240px;
+    display: flex;
+    position: relative;
+}
+
+.teamwork-potential .chart::before {
+    content: "";
+    background-image: linear-gradient(rgba(213, 220, 226, 0.4), rgb(213, 220, 226, .4)), url(/assets/working-people.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    z-index: -1;
 }
 
 .teamwork-potential .bar-chart {
     display: flex;
     position: absolute;
-    bottom: 1%;
-    left: 22%;
+    bottom: 10%;
+    left: 16%;
 }
 
 .teamwork-potential .chartCard {
-    width: 360px;
+    width: 420px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -1416,24 +1442,24 @@ body {
 }
 
 .teamwork-potential .chartBox {
-    width: 380px;
+    width: 420px;
     height: 200px;
     padding: 5px;
     border-radius: 10px;
-    background: white;
+    background: transparent;
 }
 
 .teamwork-potential .chart-rating {
     display: flex;
     position: absolute;
-    bottom: 3%;
-    left: 35.5%;
+    bottom: 2%;
+    left: 30%;
 }
 
 .teamwork-potential .rating-box {
     margin: 1px 1px 0 1px;
     padding: 3px 11px;
-    width: 2.6rem;
+    width: 3.3rem;
     display: flex;
     justify-content: center;
     color: white;
@@ -1442,7 +1468,7 @@ body {
 
 .teamwork-potential-info {
     margin-top: 30px;
-    width: 90%;
+    width: 98%;
 }
 
 .teamwork-potential-info .chart-info-box-list {
@@ -1454,7 +1480,7 @@ body {
     font-size: 11px;
     padding: 5px;
     color: white;
-    width: 11rem;
+    width: 11.5rem;
 }
 
 .teamwork-potential-info .lightblue {
@@ -1468,6 +1494,208 @@ body {
 
 .teamwork-potential-info .blue {
     background-color: #2F5595;
+}
+
+.page-seven-edit {
+    display: flex;
+    align-items: center;
+}
+
+.dealing-potential {
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dealing-potential .dealing-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dealing-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.dealing-potential .chart {
+    width: 400px;
+    height: 230px;
+}
+
+.dealing-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    bottom: 7%;
+    right: .1%;
+}
+
+.dealing-potential .chartCard {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealing-potential .chartBox {
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.dealing-potential .chart-rating {
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+    right: 4%;
+}
+
+.dealing-potential .rating-box {
+    margin: 10px 1.5px 0 1.5px;
+    padding: 3px 10px;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
+}
+
+.dealing-potential-info {
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dealing-potential-info .chart-info-box-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dealing-potential-info .chart-info-box {
+    font-size: 11px;
+    padding: 5px;
+    color: black;
+    width: 12rem;
+    background-color: #ED7D31;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.dealing-potential-info-additional {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealing-potential-info-additional .chart-info-box {
+    font-size: 11px;
+    padding: 5px;
+    color: black;
+    width: 38rem;
+    background-color: #ED7D31;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.handling-customer-potential {
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin-top: 5px;
+    justify-content: space-around;
+    border: solid 1px;
+}
+
+.handling-customer-potential .handling-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 22rem;
+}
+
+.handling-customer-potential .customer-potential-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 22rem;
+}
+
+.handling-customer-potential .chart-title {
+    background-color: #012060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.handling-customer-potential .chart {
+    width: 300px;
+    height: 230px;
+}
+
+.handling-customer-potential .bar-chart {
+    display: flex;
+    position: absolute;
+    bottom: 4%;
+    right: .1%;
+}
+
+.handling-customer-potential .chartCard {
+    width: 280px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.handling-customer-potential .chartBox {
+    width: 280px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.handling-customer-potential .chart-rating {
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+    right: 4%;
+}
+
+.handling-customer-potential .rating-box {
+    margin: 10px 1.5px 0 1.5px;
+    padding: 3px 10px;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
 }
 
 .page-seven {
