@@ -21,11 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    /* background-color: aquamarine; */
-=======
-/*     background-color: aquamarine; */
->>>>>>> origin/main
+    background-color: aquamarine;
 }
 
 .main {
@@ -33,7 +29,6 @@ body {
     width: 96%;
     height: 100%;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     position: relative;
 }
@@ -2775,17 +2770,22 @@ body {
     line-height: 18px;
 }
 
-.al-quran-potential .table-info-box {
+.more-table-info {
+    width: 38rem;
+}
+
+.more-table-info .table-info-box {
     border: solid 2px #031D5B;
     padding: 5px;
     line-height: 14px;
     margin-top: 5px;
+    font-size: 12px;
 }
 
-.al-quran-potential .table-info-box.odd {
+.more-table-info .table-info-box.odd {
     background-color: #FFF1CA;
 }
 
-.al-quran-potential .table-info-box.even {
+.more-table-info .table-info-box.even {
     background-color: #FFE699;
 }
