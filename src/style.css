@@ -1653,6 +1653,10 @@ body {
     margin-left: 15px;
 }
 
+.handling-customer-potential .chart-title.handling {
+    background-color: #C00000;
+}
+
 .handling-customer-potential .chart {
     width: 300px;
     height: 230px;
@@ -1696,6 +1700,61 @@ body {
     justify-content: center;
     color: white;
     font-size: 11px;
+}
+
+.handling-customer-potential-info {
+    width: 100%;
+}
+
+.handling-customer-potential-info .chart-info-box-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    min-height: auto;
+}
+
+.handling-customer-potential-info .chart-info-box {
+    font-size: 11px;
+    padding: 5px;
+    color: white;
+    width: 11.5rem;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.handling-customer-potential-info .red {
+    background-color: #FE0000;
+}
+
+.handling-customer-potential-info .lightbrown {
+    background-color: #ED7D31;
+}
+
+.handling-customer-potential-info .brown {
+    background-color: #843C0C;
+}
+
+
+.handling-customer-potential-info .lightblue {
+    background-color: #4473C5;
+}
+
+.handling-customer-potential-info .skyblue {
+    background-color: #00B0F0;
+    color: black;
+}
+
+.handling-customer-potential-info .purple {
+    background-color: #7030A0;
+}
+
+.handling-customer-potential-info .darkblue {
+    background-color: #002060;
+}
+
+.handling-customer-potential-info .darkgreen {
+    background-color: #548235;
+    color: black;
 }
 
 .page-seven {

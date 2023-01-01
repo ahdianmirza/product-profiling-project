@@ -596,14 +596,14 @@ function drawChart15() {
         label: 'Leadership Potential',
         data: [50, 55, 60],
         backgroundColor: [
-          'rgba(237, 125, 49, 1)',
           'rgba(255, 0, 0, 1)',
-          'rgba(132, 60, 12, 1)'
+          'rgba(132, 60, 12, 1)',
+          'rgba(237, 125, 49, 1)'
         ],
         borderColor: [
-          'rgba(237, 125, 49, 0.3)',
           'rgba(255, 0, 0, 0.3)',
-          'rgba(132, 60, 12, 0.3)'
+          'rgba(132, 60, 12, 0.3)',
+          'rgba(237, 125, 49, 0.3)'
         ],
         borderWidth: 2
       }]
@@ -647,14 +647,14 @@ function drawChart16() {
         label: 'Leadership Potential',
         data: [55, 48, 75],
         backgroundColor: [
-          'rgba(237, 125, 49, 1)',
-          'rgba(255, 0, 0, 1)',
-          'rgba(132, 60, 12, 1)'
+          'rgba(68, 114, 196, 1)',
+          'rgba(0, 176, 240, 1)',
+          'rgba(0, 32, 96, 1)'
         ],
         borderColor: [
-          'rgba(237, 125, 49, 0.3)',
-          'rgba(255, 0, 0, 0.3)',
-          'rgba(132, 60, 12, 0.3)'
+          'rgba(68, 114, 196, 0.3)',
+          'rgba(0, 176, 240, 0.3)',
+          'rgba(0, 32, 96, 0.3)'
         ],
         borderWidth: 2
       }]
