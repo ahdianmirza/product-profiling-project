@@ -1623,7 +1623,6 @@ body {
     align-items: flex-start;
     margin-top: 5px;
     justify-content: space-around;
-    border: solid 1px;
 }
 
 .handling-customer-potential .handling-potential-chart {
@@ -1639,7 +1638,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 22rem;
+    height: 22.7rem;
 }
 
 .handling-customer-potential .chart-title {
@@ -1666,7 +1665,7 @@ body {
     display: flex;
     position: absolute;
     bottom: 4%;
-    right: .1%;
+    right: 6%;
 }
 
 .handling-customer-potential .chartCard {
@@ -1677,25 +1676,36 @@ body {
     justify-content: center;
 }
 
+.handling-customer-potential .customer-potential-chart .chartBox {
+    width: 280px;
+    height: 311px;
+}
+
+.handling-customer-potential .customer-potential-chart .bar-chart {
+    bottom: 5%;
+    right: .1%;
+}
+
 .handling-customer-potential .chartBox {
     width: 280px;
     height: 300px;
     padding: 5px;
     border-radius: 10px;
-    background: white;
+    background: transparent;
 }
 
 .handling-customer-potential .chart-rating {
     display: flex;
     position: absolute;
-    bottom: 1%;
-    right: 4%;
+    bottom: 44%;
+    left: 58%;
+    transform: rotate(-90deg);
 }
 
 .handling-customer-potential .rating-box {
     margin: 10px 1.5px 0 1.5px;
     padding: 3px 10px;
-    width: 3rem;
+    width: 2.8rem;
     display: flex;
     justify-content: center;
     color: white;

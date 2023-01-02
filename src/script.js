@@ -642,7 +642,10 @@ function drawChart15() {
 
 function drawChart16() {
   const data = {
-      labels: ['Customer Service', 'Image & Impact', 'Integrity'],
+      labels: [
+        ['Customer', 'Service'],
+        ['Image &', 'impact'],
+        'Integrity'],
       datasets: [{
         label: 'Leadership Potential',
         data: [55, 48, 75],
@@ -650,7 +653,7 @@ function drawChart16() {
           'rgba(68, 114, 196, 1)',
           'rgba(0, 176, 240, 1)',
           'rgba(0, 32, 96, 1)'
-        ],
+        ],  
         borderColor: [
           'rgba(68, 114, 196, 0.3)',
           'rgba(0, 176, 240, 0.3)',
@@ -665,6 +668,16 @@ function drawChart16() {
       type: 'bar',
       data,
       options: {
+        plugins : {
+          tooltip: {
+            callbacks: {
+              title: (context) => {
+                console.log(context[0].label);
+                return context[0].label.replaceAll(',', ' ');
+              }
+            }
+          }
+        },
         maintainAspectRatio: false,
         plugins: {
         legend: {
