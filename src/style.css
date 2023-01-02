@@ -647,6 +647,7 @@ body {
     display: flex;
     position: relative;
     width: 22rem;
+    height: 13rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -665,7 +666,7 @@ body {
 
 .communication-potential .chart {
     width: 300px;
-    height: 150px;
+    height: 180px;
     margin-bottom: 3px;
     margin-top: 3px;
 }
@@ -673,7 +674,7 @@ body {
 .communication-potential .bar-chart {
     display: flex;
     position: absolute;
-    top: 16.5%;
+    bottom: 11%;
 }
 
 .communication-potential .chartCard {
@@ -685,21 +686,23 @@ body {
 }
 
 .communication-potential .chartCard .chartBox {
-    width: 300px;
+    width: 335px;
     height: 150px;
     padding: 5px;
     border-radius: 10px;
-    background: white;
 }
 
 .communication-potential .chart-rating {
     display: flex;
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
 }
 
 .communication-potential .rating-box {
-    width: 4rem;
+    width: 3.2rem;
     padding: 3px;
-    margin: 5px 3px 0 2px;
+    margin: 5px 1px 0 2px;
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -763,6 +766,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .task-acc-potential .chart-title {
@@ -776,6 +780,7 @@ body {
 
 .task-acc-potential .task-acc-potential-chart {
     display: flex;
+    position: relative;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -784,12 +789,12 @@ body {
 .task-acc-potential .bar-chart {
     display: flex;
     position: absolute;
-    left: 17%;
-    top: 17%;
+    left: 12%;
+    top: 1%;
 }
 
 .task-acc-potential .chartCard {
-    width: 450px;
+    width: 480px;
     height: 230px;
     display: flex;
     align-items: center;
@@ -797,11 +802,10 @@ body {
 }
 
 .task-acc-potential .chartBox {
-    width: 450px;
+    width: 500px;
     height: 230px;
     padding: 5px;
     border-radius: 10px;
-    background: white;
 }
 
 .task-acc-potential .chart {
@@ -811,16 +815,19 @@ body {
 
 .task-acc-potential .chart-rating {
     display: flex;
+    position: absolute;
     flex-direction: column;
     height: 13rem;
     justify-content: flex-start;
+    left: 8%;
+    top: 4%;
 }
 
 .task-acc-potential .rating-box {
     padding: 4px;
-    margin: 11px 0;
-    font-size: 6px;
-    width: 1.8rem;
+    margin: 14.5px 0;
+    font-size: 9px;
+    width: 2.3rem;
     display: flex;
     justify-content: center;
     transform: rotate(-90deg);
@@ -1157,7 +1164,7 @@ body {
 
 .self-lead-potential .self-lead-potential-chart {
     display: flex;
-    width: 100%;
+    width: 38rem;
     height: 19rem;
     justify-content: center;
     align-items: center;
@@ -1167,6 +1174,7 @@ body {
 .self-lead-potential .bar-chart {
     display: flex;
     position: absolute;
+    bottom: 6%;
 }
 
 .self-lead-potential .chartCard {
@@ -1182,7 +1190,6 @@ body {
     height: 250px;
     padding: 20px;
     border-radius: 10px;
-    background: white;
 }
 
 .self-lead-potential .chart {
@@ -1196,13 +1203,14 @@ body {
     height: 15rem;
     position: absolute;
     left: 3%;
+    top: 8%;
 }
 
 .self-lead-potential .rating-box {
     padding: 4px;
-    margin: 14px 0;
-    font-size: 9px;
-    width: 2.3rem;
+    margin: 17px 0;
+    font-size: 10px;
+    width: 2.7rem;
     display: flex;
     justify-content: center;
     transform: rotate(-90deg);
@@ -1324,8 +1332,6 @@ body {
     width: 400px;
     height: 200px;
     padding: 5px;
-    border-radius: 10px;
-    background: white;
 }
 
 .creativity-potential .chart-rating {
@@ -1552,7 +1558,6 @@ body {
     height: 200px;
     padding: 5px;
     border-radius: 10px;
-    background: white;
 }
 
 .dealing-potential .chart-rating {

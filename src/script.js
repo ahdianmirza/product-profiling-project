@@ -24,50 +24,64 @@ function drawChart() {
 
 function drawChart2() {
     // setup
-const data = {
-  labels: ["Written Communication", "Oral Communication"],
-  datasets: [
-    {
-      label: "Communication Potential",
-      data: [76, 60],
-      backgroundColor: ["rgba(1, 32, 96, 1)", "rgba(237, 125, 49, 1)"],
-      borderWidth: 1,
-    },
-  ],
-};
+    Chart.defaults.font.size = 11;
+    const data = {
+      labels: [
+        ["Written", "Communication"],
+        ["Oral", "Communication"]
+    ],
+      datasets: [
+        {
+          label: "Communication Potential",
+          data: [76, 60],
+          backgroundColor: ["rgba(1, 32, 96, 1)", "rgba(237, 125, 49, 1)"],
+          borderWidth: 1,
+        },
+      ],
+    };
 
-// config
-const config = {
-  type: "bar",
-  data,
-  options: {
-    plugins: {
-        legend: {
-            display: false
-        }
-    },
-    indexAxis: "y",
-    scales: {
-      x: {
-        beginAtZero: true,
-        min: 0,
-        max: 100,
-        ticks: {
-          stepSize: 25,
+    // config
+    const config = {
+      type: "bar",
+      data,
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        indexAxis: "y",
+        scales: {
+          x: {
+            beginAtZero: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 25,
+            },
+          },
         },
       },
-    },
-  },
-};
+    };
 
-// render init block
-const myChart = new Chart(document.getElementById("myChart"), config);
+    // render init block
+    const myChart = new Chart(document.getElementById("myChart"), config);
 }
 
 function drawChart3() {
     // setup 
     const data = {
-      labels: ['Processing', 'Energy', 'Work Standard', 'Follow Up', 'Information Monitoring', 'Attention to Detail', 'Innitiative', 'Technical Ability'],
+      labels: [
+      'Processing',
+      'Energy',
+      ['Work', 'Standard'],
+      ['Follow', 'Up'],
+      ['Information', 'Monitoring'],
+      ['Attention', 'to Detail'],
+      'Innitiative',
+      ['Technical', 'Ability']
+    ],
       datasets: [{
         label: 'Weekly Sales',
         data: [75, 47, 60, 60, 68, 73, 48, 75],
@@ -113,6 +127,13 @@ function drawChart3() {
             ticks: {
               stepSize: 25,
             }
+          },
+          x: {
+            ticks: {
+              font: {
+                size: 9
+              }
+            }
           }
         }
       }
@@ -126,9 +147,16 @@ function drawChart3() {
 }
 
 function drawChart4() {
-    // setup 
+    // setup
     const data = {
-      labels: ['Individual Leadership', 'Strategic Leadership', 'Managerial Leadership', 'Coaching', 'Judgement', 'Risk Taking', 'Organizational Awareness'],
+      labels: [
+        ['Individual', 'Leadership'], 
+        ['Strategic', 'Leadership'],
+        ['Managerial', 'Leadership'],
+        ['Coaching'],
+        ['Judgement'],
+        ['Risk', 'Taking'],
+        ['Organizational', 'Awareness']],
       datasets: [{
         label: 'Leadership Potential',
         data: [50, 70, 55, 70, 55, 50, 75],
@@ -171,6 +199,13 @@ function drawChart4() {
             max: 100,
             ticks: {
               stepSize: 25,
+            }
+          },
+          x: {
+            ticks: {
+              font: {
+                size: 9.4
+              }
             }
           }
         }
