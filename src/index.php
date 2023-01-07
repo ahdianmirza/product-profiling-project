@@ -20,24 +20,7 @@
 <body>
     <!-- Halaman satu -->
     <div class="container-pdf page-one">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
+        <?php include('./view/header.php'); ?>
 
         <section class="main">
             <div class="title">
@@ -66,8 +49,7 @@
                         <table class="five-list-content">
                             <tr>
                                 <td class="letter"><b>W</b></td>
-                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"
-                                        height="24">
+                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" height="24">
                                         <path fill="none" d="M0 0h24v24H0z" />
                                         <path d="M16 12l-6 6V6z" fill="rgba(188,73,114,1)" />
                                     </svg></td>
@@ -75,8 +57,7 @@
                             </tr>
                             <tr>
                                 <td class="letter"><b>I</b></td>
-                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"
-                                        height="24">
+                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" height="24">
                                         <path fill="none" d="M0 0h24v24H0z" />
                                         <path d="M16 12l-6 6V6z" fill="rgba(188,73,114,1)" />
                                     </svg></td>
@@ -85,8 +66,7 @@
                             </tr>
                             <tr>
                                 <td class="letter"><b>S</b></td>
-                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"
-                                        height="24">
+                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" height="24">
                                         <path fill="none" d="M0 0h24v24H0z" />
                                         <path d="M16 12l-6 6V6z" fill="rgba(188,73,114,1)" />
                                     </svg></td>
@@ -94,8 +74,7 @@
                             </tr>
                             <tr>
                                 <td class="letter"><b>E</b></td>
-                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"
-                                        height="24">
+                                <td class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" height="24">
                                         <path fill="none" d="M0 0h24v24H0z" />
                                         <path d="M16 12l-6 6V6z" fill="rgba(188,73,114,1)" />
                                     </svg></td>
@@ -193,26 +172,7 @@
             </section>
         </section>
 
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>1</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php include('./view/footer.php'); ?>
     </div>
     <!-- Halaman satu -->
 
