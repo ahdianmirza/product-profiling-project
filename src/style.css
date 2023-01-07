@@ -14,8 +14,22 @@ body {
     flex-direction: column;
 }
 
+@page {
+    size: A4;
+    margin: 5mm 1mm;
+}
+
+@media print {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
 .container-pdf {
-    min-height: auto;
+    min-height: 1045px;
     width: 652px;
     display: flex;
     flex-direction: column;
