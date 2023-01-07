@@ -178,25 +178,6 @@
 
     <!-- Halaman dua -->
     <div class="container-pdf page-two">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="self-info-chart">
                 <div class="self-info">
@@ -654,51 +635,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>2</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman dua -->
 
     <!-- Halaman tiga -->
     <div class="container-pdf page-three">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="task-acc-potential">
                 <div class="chart-title">
@@ -811,51 +752,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>3</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman tiga -->
 
     <!-- Halaman empat -->
     <div class="container-pdf page-four">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="more-explanation">
                 <div class="grey-box">
@@ -1007,51 +908,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>4</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman empat -->
 
     <!-- Halaman lima -->
     <div class="container-pdf page-five">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="more-explanation">
                 <div class="grey-box">
@@ -1153,51 +1014,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>5</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman lima -->
 
     <!-- Halaman enam -->
     <div class="container-pdf page-six">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="creativity-potential">
                 <div class="bar-chart">
@@ -1315,51 +1136,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>6</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman enam -->
 
     <!-- Halaman tujuh edit -->
     <div class="container-pdf page-seven-edit">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <div class="dealing-potential">
                 <div class="dealing-potential-chart">
@@ -1517,51 +1298,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>7</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman tujuh -->
 
     <!-- Halaman delapan -->
     <div class="container-pdf page-seven">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <div class="quadrant-employee">
                 <div class="bar-chart lightbrown">
@@ -1691,51 +1432,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>8</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman delapan -->
 
     <!-- Halaman sembilan -->
     <div class="container-pdf page-eight">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="explanation">
                 <div class="lightbrown-box">
@@ -1834,51 +1535,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>9</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman sembilan -->
 
     <!-- Halaman sepuluh -->
     <div class="container-pdf page-nine">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="explanation">
                 <div class="lightbrown-box">
@@ -1966,51 +1627,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>10</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman sepuluh -->
 
     <!-- Halaman sebelas -->
     <div class="container-pdf page-ten">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="explanation">
                 <div class="lightbrown-box">
@@ -2080,51 +1701,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>11</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman sebelas -->
 
     <!-- Halaman dua belas -->
     <div class="container-pdf page-eleven">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <div class="pola-kepribadian">
                 <div class="analitis-tegas">
@@ -2538,51 +2119,11 @@
                 </div>
             </section>
         </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>12</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     <!-- Halaman dua belas -->
 
     <!-- Halaman tiga belas -->
     <div class="container-pdf page-twelve">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <section class="al-quran-potential">
                 <div class="al-quran-potential-title">
@@ -2727,53 +2268,12 @@
                     </div>
                 </div>
             </section>
-
-        </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>13</p>
-                    </div>
-                </div>
-            </div>
         </section>
     </div>
     <!-- Halaman tiga belas -->
 
     <!-- Halaman empat belas -->
     <div class="container-pdf page-thirteen">
-        <section class="header">
-            <div class="corner-border-left">
-                <div class="corner-left"></div>
-            </div>
-            <div class="conrner-border-logo">
-                <div class="logo">
-                    <div class="potensi-box">
-                        <p>POTENSI</p>
-                    </div>
-                    <div class="wise-logo">
-                        <p>W.I.S.E</p>
-                    </div>
-                </div>
-                <div class="corner-border-right">
-                    <div class="corner-right"></div>
-                </div>
-            </div>
-        </section>
-
         <section class="main">
             <div class="more-table-info">
                 <div class="table-info-box odd">
@@ -2815,27 +2315,6 @@
                     <h4>TUTUR KATA RAPI</h4>
                     <p>Kemampuan seseorang untuk bertutur secara tersusun dan rapi, mudah untuk dipahami dan dilakukan
                         dalam aktivitas berkomunikasi dengan orang lain</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="footer">
-            <div class="left-content">
-                <div class="contact-container">
-                    <div class="contact">
-                        <p>081234567890</p>
-                    </div>
-                </div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-                <div class="white-space"></div>
-            </div>
-            <div class="right-content">
-                <h5>SELF POTENTIAL MAPPING</h5>
-                <div class="number-of-page-container">
-                    <div class="number-of-page">
-                        <p>14</p>
-                    </div>
                 </div>
             </div>
         </section>
