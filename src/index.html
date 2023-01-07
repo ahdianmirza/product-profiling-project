@@ -12,9 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!-- html2pdf -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <!-- jspdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+    <!-- html2canvas -->
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <!-- window script -->
+    <script type="text/javascript">
+        window.html2canvas = html2canvas;
+        window.jsPDF = window.jspdf.jsPDF;
+
+        function getPDF() {
+            html2canvas(document.querySelector("#print-content"), {
+                allowTaint: true,
+                useCORS: true,
+                scale: 1,
+                width: 200
+            }).then(canvas => {
+                document.body.appendChild(canvas);
+                const img = canvas.toDataURL("image/png")
+
+                const doc = new jsPDF();
+                doc.addImage(img, 'PNG', 5, 5, 200, 1045);
+                doc.save();
+            });
+        }
+    </script>
 
     <!-- style -->
     <style>
@@ -3120,9 +3145,9 @@
 </head>
 
 <body>
-    <button onclick="createPDF()">Create PDF</button>
+    <button id="pdf-button" onclick="getPDF()">Create PDF</button>
 
-    <div id="content">
+    <div id="print-content">
         <!-- Halaman satu -->
         <div class="container-pdf page-one">
             <section class="header">
@@ -6830,20 +6855,24 @@
             drawChart16();
         }
     </script>
-    <script>
-        function createPDF() {
-            const pdf = document.getElementById("content");
-            const opt = {
-                margin: 1,
-                filename: 'html2pdf-converted.pdf',
-                image: { type: 'jpeg', quality: 1 },
-                html2canvas: { scale: 2, dpi: 96, scrollX: 0, scrollY: 0 },
-                jsPDF: { unit: 'in', format: 'a3', orientation: 'portrait' }
-            };
-            html2pdf().set(opt).from(pdf).save();
-        }
-    </script>
+    <!-- <script>
+        const pdfButton = document.getElementById('pdf-button');
 
+        const getPDF = () => {
+            const printContent = document.getElementById('print-content')
+            const doc = new jsPDF();
+
+            doc.fromHTML(printContent, 15, 15);
+            doc.save("output.pdf");
+        }
+
+        // pdfButton.onClick = () => {
+        //     const doc = new jsPDF();
+
+        //     doc.text("hello world", 15, 15);
+        //     doc.save("output.pdf");
+        // }
+    </script> -->
 </body>
 
 </html>
