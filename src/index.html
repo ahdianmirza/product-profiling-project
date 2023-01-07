@@ -6,11 +6,3109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container-pdf {
+            min-height: auto;
+            width: 652px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: aquamarine; */
+        }
+
+        .main {
+            display: flex;
+            width: 96%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .header .corner-border-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .header .corner-left {
+            width: 15px;
+            height: 35px;
+            border-top: solid 10px #002060;
+            border-left: solid 10px #002060;
+        }
+
+        .header .corner-right {
+            width: 15px;
+            height: 35px;
+            border-top: solid 10px #002060;
+            border-right: solid 10px #002060;
+        }
+
+        .header .conrner-border-logo {
+            display: flex;
+            width: 28%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px #002060;
+            width: 140px;
+            height: 30px;
+        }
+
+        .header .potensi-box {
+            background-color: #002060;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            width: 70px;
+            height: 25px;
+            color: white;
+            margin-right: 8px;
+            letter-spacing: 2px;
+        }
+
+        .header .wise-logo {
+            font-weight: bold;
+            color: #ED462F;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            background-color: #002060;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            margin-top: 20px;
+        }
+
+        .footer .left-content {
+            display: flex;
+            background-color: #002060;
+            align-items: center;
+        }
+
+        .footer .contact-container {
+            width: 8rem;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer .contact {
+            width: 6rem;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .footer .white-space {
+            margin-left: 5px;
+            width: 4px;
+            height: 28px;
+            background-color: white;
+        }
+
+        .footer .right-content {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 5.5rem;
+        }
+
+        .footer .number-of-page-container {
+            width: 3rem;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer .number-of-page {
+            width: 2rem;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .footer .right-content h5 {
+            color: white;
+        }
+
+        .title {
+            color: #012060;
+        }
+
+        .title h1 {
+            font-weight: 900;
+            font-size: 30px;
+        }
+
+        .title span {
+            color: #FF0000;
+        }
+
+        .grey-box {
+            margin-top: 20px;
+            width: 38rem;
+            background-color: #F2F2F2;
+            text-align: justify;
+            padding: 5px;
+            line-height: 18px;
+        }
+
+        .grey-box p {
+            font-size: 12px;
+        }
+
+        .wise-content-container {
+            /* background-color: #F8C802; */
+            width: 38.6rem;
+            height: 11rem;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .small-circle {
+            width: 7px;
+            height: 7px;
+            display: flex;
+            position: absolute;
+            top: 7%;
+            left: 5%;
+            bottom: auto;
+            border-radius: 50%;
+            background-color: #9DC3E6;
+        }
+
+        .line-circle {
+            width: 26rem;
+            height: 2px;
+            display: flex;
+            position: absolute;
+            top: 8.7%;
+            left: 6%;
+            background-color: #9DC3E6;
+        }
+
+        .line-square {
+            width: 36rem;
+            height: 7.3rem;
+            border: solid 3px;
+            display: flex;
+            position: absolute;
+            bottom: 10%;
+            color: #9DC3E6;
+        }
+
+        .wise {
+            display: flex;
+            position: absolute;
+            top: 2%;
+            right: 9%;
+            z-index: 1;
+            color: #ED462F;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .lightblue-box {
+            background-color: #9DC3E6;
+            width: 35rem;
+        }
+
+        .lightblue-box .five-list-content {
+            display: flex;
+            padding-left: 10px;
+        }
+
+        .lightblue-box .five-list-content .letter {
+            font-size: 14px;
+        }
+
+        .lightblue-box .five-list-content .arrow {
+            margin: 0 5px;
+        }
+
+        .lightblue-box .five-list-content .five-text {
+            font-size: 12px;
+        }
+
+        .quadrant-container {
+            margin-top: 50px;
+            width: 30rem;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hor-parameter.berbicara {
+            display: flex;
+            position: absolute;
+            top: 3%;
+            font-size: 20px;
+            font-style: italic;
+            color: #7F7F7F;
+        }
+
+        .hor-parameter.mengamati {
+            display: flex;
+            position: absolute;
+            bottom: 3%;
+            font-size: 20px;
+            font-style: italic;
+            color: #7F7F7F;
+        }
+
+        .ver-parameter.tugas {
+            display: flex;
+            position: absolute;
+            transform: rotate(-90deg);
+            font-size: 20px;
+            font-style: italic;
+            color: #7F7F7F;
+            align-items: flex-start;
+            right: 88%;
+        }
+
+        .ver-parameter.hubungan {
+            display: flex;
+            position: absolute;
+            transform: rotate(90deg);
+            right: 1%;
+            font-size: 20px;
+            font-style: italic;
+            color: #7F7F7F;
+            right: -15%;
+        }
+
+        .arrow-left svg {
+            display: flex;
+            position: absolute;
+            transform: rotate(180deg);
+            bottom: 38.5%;
+            left: 10%;
+        }
+
+        .arrow-square-left {
+            width: 150px;
+            height: 18px;
+            display: flex;
+            position: absolute;
+            background-color: #D98642;
+            bottom: 48.5%;
+            left: 16%;
+        }
+
+        .arrow-left-text {
+            display: flex;
+            position: absolute;
+            bottom: 49.3%;
+            left: 18%;
+            font-size: 11px;
+        }
+
+        .arrow-right svg {
+            display: flex;
+            position: absolute;
+            bottom: 42.8%;
+            right: 10%;
+        }
+
+        .arrow-square-right {
+            width: 150px;
+            height: 18px;
+            display: flex;
+            position: absolute;
+            background-color: #3979AE;
+            bottom: 48.5%;
+            right: 16%;
+        }
+
+        .arrow-right-text {
+            display: flex;
+            position: absolute;
+            bottom: 49.3%;
+            right: 23%;
+            font-size: 11px;
+            color: white;
+        }
+
+        .quadrant {
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+            border: solid 2px;
+        }
+
+        .quadrant-box {
+            width: 46%;
+            height: 46%;
+            border: solid 1px;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .quadrant-box .sub-quadrant-text {
+            margin: 5px 0 20px 0;
+        }
+
+        .quadrant-box h2 {
+            font-size: 28px;
+            color: white;
+        }
+
+        .quadrant-box p {
+            font-size: 12px;
+        }
+
+        .green {
+            background-color: #4BA750;
+        }
+
+        .red {
+            background-color: #EC4630;
+        }
+
+        .yellow {
+            background-color: #FFF935;
+        }
+
+        .blue {
+            background-color: #40B0EF;
+        }
+
+        .self-info-chart {
+            margin-top: 4px;
+            width: 39rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .self-info {
+            border: solid 2px;
+            padding: 5px;
+            width: 19rem;
+        }
+
+        .self-info td {
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .self-info-chart .chart {
+            display: flex;
+        }
+
+        .name-advance-profile {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            font-size: 14px;
+            font-weight: 800;
+            margin-left: 13rem;
+            margin-top: 10px;
+            margin-bottom: 3px
+        }
+
+        .statistic {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .statistic-table {
+            margin-top: 30px;
+        }
+
+        .statistic-table .rating {
+            width: 100%;
+        }
+
+        .statistic .rating-type {
+            display: flex;
+        }
+
+        .statistic .rating-box {
+            width: 20px;
+            height: 120px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+        }
+
+        .statistic .inverse {
+            flex-direction: row-reverse;
+        }
+
+        .statistic .rating-box h3 {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .statistic .blue-low {
+            background-color: #98C2EA;
+        }
+
+        .statistic .blue-medium {
+            background-color: #2A75BC;
+            color: white;
+        }
+
+        .statistic .blue-moderat {
+            background-color: #40B1F0;
+            color: white;
+            line-height: 14px;
+        }
+
+        .statistic .blue-high {
+            background-color: #264C73;
+            color: white;
+        }
+
+        .statistic .red-low {
+            background-color: #F4CDAD;
+        }
+
+        .statistic .red-medium {
+            background-color: #C7582B;
+            color: white;
+        }
+
+        .statistic .red-moderat {
+            background-color: #ED7D31;
+            color: white;
+        }
+
+        .statistic .red-high {
+            background-color: #823E10;
+            color: white;
+        }
+
+        .statistic .text {
+            width: 22rem;
+            border: solid 1px;
+            padding: 25px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .statistic-type {
+            width: 100%;
+            margin-top: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .statistic-type .blue-statistic {
+            display: flex;
+            margin-bottom: 3px;
+        }
+
+        .statistic-type .number-of-rating {
+            display: flex;
+            width: 120px;
+        }
+
+        .statistic-type .rating-box {
+            width: 30px;
+            height: 16px;
+        }
+
+        .statistic-type .blue-low {
+            background-color: #98C2EA;
+        }
+
+        .statistic-type .blue-medium {
+            background-color: #2A75BC;
+        }
+
+        .statistic-type .blue-moderat {
+            background-color: #40B1F0;
+        }
+
+        .statistic-type .blue-high {
+            background-color: #264C73;
+        }
+
+        .statistic-type .statistic-type-list {
+            font-size: 11px;
+        }
+
+        .statistic-type .blue-type-list {
+            margin-left: 10px;
+        }
+
+        .statistic-type .line {
+            width: 3px;
+            height: 18rem;
+            background-color: black;
+        }
+
+        .statistic-type .red-statistic {
+            display: flex;
+        }
+
+        .statistic-type .red-type-list {
+            margin-left: 5px;
+        }
+
+        .statistic-type .red-statistic {
+            margin-bottom: 3px;
+        }
+
+        .red-statistic-list .red-statistic {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .red-statistic-list .number-of-rating {
+            margin-left: 10px;
+            flex-direction: row-reverse;
+        }
+
+        .red-statistic-list .red-low {
+            background-color: #F4CDAD;
+        }
+
+        .red-statistic-list .red-medium {
+            background-color: #C7582B;
+        }
+
+        .red-statistic-list .red-moderat {
+            background-color: #ED7D31;
+        }
+
+        .red-statistic-list .red-high {
+            background-color: #823E10;
+        }
+
+        .communication-potential {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .communication-potential .communication-potential-chart {
+            display: flex;
+            position: relative;
+            width: 22rem;
+            height: 13rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .communication-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .communication-potential .chart {
+            width: 300px;
+            height: 180px;
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+
+        .communication-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            bottom: 11%;
+        }
+
+        .communication-potential .chartCard {
+            width: 300px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .communication-potential .chartCard .chartBox {
+            width: 335px;
+            height: 150px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .communication-potential .chart-rating {
+            display: flex;
+            position: absolute;
+            bottom: 1%;
+            right: 5%;
+        }
+
+        .communication-potential .rating-box {
+            width: 3.2rem;
+            padding: 3px;
+            margin: 5px 1px 0 2px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .communication-potential .low {
+            background-color: #C28F00;
+        }
+
+        .communication-potential .medium {
+            background-color: #C65A0F;
+        }
+
+        .communication-potential .high {
+            background-color: #803D12;
+        }
+
+        .communication-potential .highest {
+            background-color: #BA0200;
+        }
+
+        .communication-potential .chart-info {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .communication-potential .chart-info .text {
+            margin: 5px;
+            color: white;
+            padding: 8px;
+        }
+
+        .communication-potential .chart-info .blue {
+            background-color: #012060;
+        }
+
+        .communication-potential .chart-info .orange {
+            background-color: #ED7D31;
+        }
+
+        .communication-potential .chart-info .text h4 {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .communication-potential .chart-info .text p {
+            text-align: justify;
+            font-size: 12px;
+        }
+
+        .task-acc-potential {
+            width: 100%;
+            height: 18rem;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .task-acc-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            padding: 4px;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+        }
+
+        .task-acc-potential .task-acc-potential-chart {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .task-acc-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            left: 12%;
+            top: 1%;
+        }
+
+        .task-acc-potential .chartCard {
+            width: 480px;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .task-acc-potential .chartBox {
+            width: 500px;
+            height: 230px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .task-acc-potential .chart {
+            width: 450px;
+            height: 230px;
+        }
+
+        .task-acc-potential .chart-rating {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            height: 13rem;
+            justify-content: flex-start;
+            left: 8%;
+            top: 4%;
+        }
+
+        .task-acc-potential .rating-box {
+            padding: 4px;
+            margin: 14.5px 0;
+            font-size: 9px;
+            width: 2.3rem;
+            display: flex;
+            justify-content: center;
+            transform: rotate(-90deg);
+            color: white;
+        }
+
+        .chart-rating .low {
+            background-color: #C28F00;
+        }
+
+        .chart-rating .medium {
+            background-color: #C65A0F;
+        }
+
+        .chart-rating .high {
+            background-color: #803D12;
+        }
+
+        .chart-rating .highest {
+            background-color: #BA0200;
+        }
+
+        .task-acc-potential-info {
+            margin-top: 15px;
+            margin-bottom: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .task-acc-potential-info .chart-info-box {
+            margin-bottom: 3px;
+            width: 38rem;
+            text-align: justify;
+            padding: 5px;
+        }
+
+        .task-acc-potential-info .chart-info-box h4 {
+            font-size: 12px;
+        }
+
+        .task-acc-potential-info .chart-info-box p {
+            font-size: 11px;
+        }
+
+        .task-acc-potential-info .red {
+            background-color: #FE0000;
+            color: white;
+        }
+
+        .task-acc-potential-info .yellow {
+            background-color: #FFC000;
+        }
+
+        .task-acc-potential-info .orange {
+            background-color: #ED7D31;
+        }
+
+        .task-acc-potential-info .lightblue {
+            background-color: #5A9BD5;
+        }
+
+        .task-acc-potential-info .darkgreen {
+            background-color: #538234;
+            color: white;
+        }
+
+        .task-acc-potential-info .darkblue {
+            background-color: #2D559B;
+            color: white;
+        }
+
+        .task-acc-potential-info .purple {
+            background-color: #7030A0;
+            color: white;
+        }
+
+        .task-acc-potential-info .lightgreen {
+            background-color: #70AD46;
+        }
+
+        .explanation .third {
+            margin-top: 5px;
+            width: 36rem;
+            line-height: 18px;
+        }
+
+        .more-explanation .grey-box {
+            width: 38rem;
+            margin: 10px;
+            line-height: 18px;
+            font-size: 12px;
+        }
+
+        .more-explanation .grey-box ul {
+            list-style-type: decimal;
+            margin-left: 12px;
+        }
+
+        .adapt-potential {
+            margin-top: 28px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .adapt-potential .adapt-potential-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .adapt-potential .chart-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #012060;
+            color: white;
+            padding: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .adapt-potential .chart-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .adapt-potential .chart-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .adapt-potential .bar-chart.blue {
+            display: flex;
+            position: absolute;
+            background-color: transparent;
+            left: 9.7%;
+            top: 14%;
+        }
+
+        .adapt-potential .precentage-blue {
+            width: 2.5rem;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            background-color: #4471CD;
+            color: white;
+            font-size: 14px;
+            top: 29.7%;
+            left: 17.5%;
+        }
+
+        .adapt-potential .precentage-orange {
+            width: 2.5rem;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            background-color: #C8540B;
+            color: white;
+            font-size: 14px;
+            top: 29.7%;
+            left: 46%;
+        }
+
+        .adapt-potential .precentage-red {
+            width: 2.5rem;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            background-color: #F90505;
+            color: white;
+            font-size: 14px;
+            top: 29.7%;
+            right: 17.2%;
+        }
+
+        .adapt-potential .bar-chart.orange {
+            display: flex;
+            position: absolute;
+            left: 38.4%;
+            top: 14%;
+            background-color: transparent;
+        }
+
+        .adapt-potential .bar-chart.red {
+            display: flex;
+            position: absolute;
+            right: 9.7%;
+            top: 14%;
+            background-color: transparent;
+        }
+
+        .adapt-potential .chartCard {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .adapt-potential .chartBox {
+            width: 130px;
+            height: 130px;
+            padding: 5px;
+        }
+
+        .adapt-potential .chart {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            margin: 0 1rem 5px 1rem;
+        }
+
+        .adapt-potential .blue {
+            background-color: #315496;
+        }
+
+        .adapt-potential .orange {
+            background-color: #EF7E2F;
+        }
+
+        .adapt-potential .red {
+            background-color: #FD0104;
+        }
+
+        .adapt-potential .chart-name {
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .adapt-potential .square {
+            width: 5px;
+            height: 5px;
+            margin-right: 5px;
+        }
+
+        .adapt-potential-info {
+            display: flex;
+            justify-content: center;
+        }
+
+        .adapt-potential-info .box-info {
+            width: 10rem;
+            margin: 10px 4px 0 4px;
+        }
+
+        .adapt-potential-info .box-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .adapt-potential-info .box-info h4 {
+            font-size: 14px;
+        }
+
+        .adapt-potential-info .box-info p {
+            font-size: 11px;
+        }
+
+        .adapt-potential-info .blue {
+            color: white;
+        }
+
+        .adapt-potential-info .red {
+            color: white;
+        }
+
+        .adapt-potential .chart-rating {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            color: white;
+            font-weight: bold;
+        }
+
+        .adapt-potential .rating-box {
+            margin: 5px 1px 0 1px;
+            padding: 3px 10px;
+            width: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .adapt-potential .rating-box p {
+            font-size: 11px;
+        }
+
+        .adapt-potential .number-of-rating {
+            display: flex;
+            justify-content: center;
+            font-size: 11px;
+        }
+
+        .adapt-potential .number-of-rating .number {
+            width: 3rem;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-five .more-explanation .grey-box {
+            margin: 10px;
+        }
+
+        .self-lead-potential {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .self-lead-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 4px;
+            margin: 20px 0 10px 0;
+            font-size: 14px;
+        }
+
+        .self-lead-potential .self-lead-potential-chart {
+            display: flex;
+            width: 38rem;
+            height: 19rem;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .self-lead-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            bottom: 6%;
+        }
+
+        .self-lead-potential .chartCard {
+            width: 600px;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .self-lead-potential .chartBox {
+            width: 500px;
+            height: 250px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .self-lead-potential .chart {
+            width: 600px;
+            height: 280px;
+        }
+
+        .self-lead-potential .chart-rating {
+            display: flex;
+            flex-direction: column;
+            height: 15rem;
+            position: absolute;
+            left: 3%;
+            top: 8%;
+        }
+
+        .self-lead-potential .rating-box {
+            padding: 4px;
+            margin: 17px 0;
+            font-size: 10px;
+            width: 2.7rem;
+            display: flex;
+            justify-content: center;
+            transform: rotate(-90deg);
+            color: white;
+        }
+
+        .self-lead-potential-info {
+            width: 100%;
+        }
+
+        .self-lead-potential-info .chart-info-box-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            min-height: auto;
+        }
+
+        .self-lead-potential-info .chart-info-box {
+            font-size: 11px;
+            padding: 5px;
+            color: white;
+            width: 11.5rem;
+            line-height: 16px;
+        }
+
+        .self-lead-potential-info .lightbrown {
+            background-color: #ED7D31;
+        }
+
+        .self-lead-potential-info .brown {
+            background-color: #843C0C;
+        }
+
+        .self-lead-potential-info .red {
+            background-color: #FE0000;
+        }
+
+        .self-lead-potential-info .lightblue {
+            background-color: #4473C5;
+        }
+
+        .self-lead-potential-info .skyblue {
+            background-color: #00B0F0;
+            color: black;
+        }
+
+        .self-lead-potential-info .purple {
+            background-color: #7030A0;
+        }
+
+        .self-lead-potential-info .darkblue {
+            background-color: #2F5597;
+        }
+
+        .self-lead-potential-info .darkgreen {
+            background-color: #548235;
+            color: black;
+        }
+
+        .creativity-potential {
+            width: 100%;
+            height: 18rem;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .creativity-potential .creativity-potential-image {
+            width: 160px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .creativity-potential .creativity-potential-image img {
+            width: 160px;
+            height: 180px;
+        }
+
+        .creativity-potential .creativity-potential-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .creativity-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        .creativity-potential .chart {
+            width: 400px;
+            height: 200px;
+        }
+
+        .creativity-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            bottom: 7%;
+            right: 3%;
+        }
+
+        .creativity-potential .chartCard {
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .creativity-potential .chartBox {
+            width: 400px;
+            height: 200px;
+            padding: 5px;
+        }
+
+        .creativity-potential .chart-rating {
+            display: flex;
+            position: absolute;
+            bottom: 1%;
+            right: 5.8%;
+        }
+
+        .creativity-potential .rating-box {
+            margin: 10px 1.5px 0 1.5px;
+            padding: 3px 10px;
+            width: 3.2rem;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+        }
+
+        .creativity-potential-info {
+            margin-top: 30px;
+            width: 98%;
+        }
+
+        .creativity-potential-info .chart-info-box-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .creativity-potential-info .chart-info-box {
+            font-size: 11px;
+            padding: 5px;
+            color: white;
+            width: 8rem;
+            border-radius: 5px;
+        }
+
+        .creativity-potential-info .red {
+            background-color: #FE0000;
+        }
+
+        .creativity-potential-info .purple {
+            background-color: #7030A0;
+        }
+
+        .creativity-potential-info .lightbrown {
+            background-color: #C35C11;
+        }
+
+        .creativity-potential-info .darkbrown {
+            background-color: #833D0C;
+        }
+
+        .teamwork-potential {
+            margin-top: 50px;
+            width: 100%;
+            height: 16.5rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .teamwork-potential .teamwork-potential-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .teamwork-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            width: 9.5rem;
+        }
+
+        .teamwork-potential .chart {
+            width: 430px;
+            height: 240px;
+            display: flex;
+            position: relative;
+        }
+
+        .teamwork-potential .chart::before {
+            content: "";
+            background-image: linear-gradient(rgba(213, 220, 226, 0.4), rgb(213, 220, 226, .4)), url(/assets/working-people.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.25;
+            z-index: -1;
+        }
+
+        .teamwork-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            bottom: 10%;
+            left: 16%;
+        }
+
+        .teamwork-potential .chartCard {
+            width: 420px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .teamwork-potential .chartBox {
+            width: 420px;
+            height: 200px;
+            padding: 5px;
+            border-radius: 10px;
+            background: transparent;
+        }
+
+        .teamwork-potential .chart-rating {
+            display: flex;
+            position: absolute;
+            bottom: 2%;
+            left: 30%;
+        }
+
+        .teamwork-potential .rating-box {
+            margin: 1px 1px 0 1px;
+            padding: 3px 11px;
+            width: 3.3rem;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+        }
+
+        .teamwork-potential-info {
+            margin-top: 30px;
+            width: 98%;
+        }
+
+        .teamwork-potential-info .chart-info-box-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .teamwork-potential-info .chart-info-box {
+            font-size: 11px;
+            padding: 5px;
+            color: white;
+            width: 11.5rem;
+        }
+
+        .teamwork-potential-info .lightblue {
+            background-color: #5A9BD5;
+            color: black;
+        }
+
+        .teamwork-potential-info .skyblue {
+            background-color: #4473C5;
+        }
+
+        .teamwork-potential-info .blue {
+            background-color: #2F5595;
+        }
+
+        .page-seven-edit {
+            display: flex;
+            align-items: center;
+        }
+
+        .dealing-potential {
+            width: 100%;
+            height: 18rem;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .dealing-potential .dealing-potential-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .dealing-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        .dealing-potential .chart {
+            width: 400px;
+            height: 230px;
+        }
+
+        .dealing-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            bottom: 7%;
+            right: .1%;
+        }
+
+        .dealing-potential .chartCard {
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dealing-potential .chartBox {
+            width: 400px;
+            height: 200px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .dealing-potential .chart-rating {
+            display: flex;
+            position: absolute;
+            bottom: 1%;
+            right: 4%;
+        }
+
+        .dealing-potential .rating-box {
+            margin: 10px 1.5px 0 1.5px;
+            padding: 3px 10px;
+            width: 3rem;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+        }
+
+        .dealing-potential-info {
+            width: 100%;
+            height: 16rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dealing-potential-info .chart-info-box-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dealing-potential-info .chart-info-box {
+            font-size: 11px;
+            padding: 5px;
+            color: black;
+            width: 12rem;
+            background-color: #ED7D31;
+            line-height: 16px;
+            margin-bottom: 5px;
+        }
+
+        .dealing-potential-info-additional {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dealing-potential-info-additional .chart-info-box {
+            font-size: 11px;
+            padding: 5px;
+            color: black;
+            width: 38rem;
+            background-color: #ED7D31;
+            line-height: 16px;
+            margin-bottom: 5px;
+        }
+
+        .handling-customer-potential {
+            width: 100%;
+            height: 22rem;
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+            margin-top: 5px;
+            justify-content: space-around;
+        }
+
+        .handling-customer-potential .handling-potential-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 22rem;
+        }
+
+        .handling-customer-potential .customer-potential-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 22.7rem;
+        }
+
+        .handling-customer-potential .chart-title {
+            background-color: #012060;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            font-size: 14px;
+            margin-left: 15px;
+        }
+
+        .handling-customer-potential .chart-title.handling {
+            background-color: #C00000;
+        }
+
+        .handling-customer-potential .chart {
+            width: 300px;
+            height: 230px;
+        }
+
+        .handling-customer-potential .bar-chart {
+            display: flex;
+            position: absolute;
+            bottom: 4%;
+            right: 6%;
+        }
+
+        .handling-customer-potential .chartCard {
+            width: 280px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .handling-customer-potential .customer-potential-chart .chartBox {
+            width: 280px;
+            height: 311px;
+        }
+
+        .handling-customer-potential .customer-potential-chart .bar-chart {
+            bottom: 5%;
+            right: .1%;
+        }
+
+        .handling-customer-potential .chartBox {
+            width: 280px;
+            height: 300px;
+            padding: 5px;
+            border-radius: 10px;
+            background: transparent;
+        }
+
+        .handling-customer-potential .chart-rating {
+            display: flex;
+            position: absolute;
+            bottom: 44%;
+            left: 58%;
+            transform: rotate(-90deg);
+        }
+
+        .handling-customer-potential .rating-box {
+            margin: 10px 1.5px 0 1.5px;
+            padding: 3px 10px;
+            width: 2.8rem;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+        }
+
+        .handling-customer-potential-info {
+            width: 100%;
+        }
+
+        .handling-customer-potential-info .chart-info-box-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            min-height: auto;
+        }
+
+        .handling-customer-potential-info .chart-info-box {
+            font-size: 11px;
+            padding: 5px;
+            color: white;
+            width: 11.5rem;
+            line-height: 16px;
+            text-align: justify;
+        }
+
+        .handling-customer-potential-info .red {
+            background-color: #FE0000;
+        }
+
+        .handling-customer-potential-info .lightbrown {
+            background-color: #ED7D31;
+        }
+
+        .handling-customer-potential-info .brown {
+            background-color: #843C0C;
+        }
+
+
+        .handling-customer-potential-info .lightblue {
+            background-color: #4473C5;
+        }
+
+        .handling-customer-potential-info .skyblue {
+            background-color: #00B0F0;
+            color: black;
+        }
+
+        .handling-customer-potential-info .purple {
+            background-color: #7030A0;
+        }
+
+        .handling-customer-potential-info .darkblue {
+            background-color: #002060;
+        }
+
+        .handling-customer-potential-info .darkgreen {
+            background-color: #548235;
+            color: black;
+        }
+
+        .page-seven {
+            display: flex;
+            align-items: center;
+        }
+
+        .page-seven .main {
+            position: relative;
+        }
+
+        .quadrant-employee {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+
+        .quadrant-employee .bar-chart.lightbrown {
+            display: flex;
+            position: absolute;
+            top: 4.3%;
+            left: 20%;
+            background-color: transparent;
+        }
+
+        .quadrant-employee .chartCard {
+            height: 150px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quadrant-employee .chartBox {
+            height: 150px;
+            width: 150px;
+            padding: 5px;
+        }
+
+        .quadrant-employee .precentage-lightbrown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 24px;
+            top: 11.5%;
+            left: 28%;
+        }
+
+        .quadrant-employee .bar-chart.red {
+            display: flex;
+            position: absolute;
+            top: 27%;
+            left: 1%;
+            background-color: transparent;
+        }
+
+        .quadrant-employee .precentage-red {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 24px;
+            top: 34%;
+            left: 9%;
+        }
+
+        .quadrant-employee .bar-chart.lightblue {
+            display: flex;
+            position: absolute;
+            bottom: 24%;
+            left: 2%;
+            background-color: transparent;
+        }
+
+        .quadrant-employee .precentage-lightblue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 24px;
+            bottom: 31%;
+            left: 10%;
+        }
+
+        .quadrant-employee .bar-chart.yellow {
+            display: flex;
+            position: absolute;
+            bottom: 5%;
+            left: 19%;
+            background-color: transparent;
+        }
+
+        .quadrant-employee .precentage-yellow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 24px;
+            bottom: 12%;
+            left: 27%;
+        }
+
+        .quadrant-chart .circle-chart-list {
+            margin: 0 0 30px 0;
+            width: 150px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .circle-chart-item {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            position: absolute;
+        }
+
+        .circle-chart-item.executives {
+            top: 15.5%;
+            left: 15%;
+        }
+
+        .circle-chart-item.self-employee {
+            top: 37%;
+            left: 20%;
+        }
+
+        .circle-chart-item.business-owner {
+            bottom: 37%;
+            left: 21.5%;
+        }
+
+        .circle-chart-item.investor {
+            bottom: 17%;
+            left: 25%;
+        }
+
+        .quadrant-chart .circle-chart {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            position: absolute;
+        }
+
+        .quadrant-chart .lightbrown {
+            background-color: #C55B10;
+        }
+
+        .quadrant-chart .red {
+            background-color: #FE0002;
+        }
+
+        .quadrant-chart .lightblue {
+            background-color: #2E75B5;
+        }
+
+        .quadrant-chart .yellow {
+            background-color: #FFC000;
+        }
+
+        .quadrant-employee .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .quadrant-employee .quadrant-line {
+            display: flex;
+            position: absolute;
+            left: 1%;
+            width: 38rem;
+            height: 280px;
+            border: solid 7px;
+            border-style: double;
+            border-color: #0C1E5C transparent transparent transparent;
+            border-radius: 65%/400px 400px 0 0;
+            transform: rotate(-90deg);
+        }
+
+        .quadrant-employee .top-circle-chart-item {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .quadrant-employee .bottom-circle-chart-item {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 3rem;
+        }
+
+        .quadrant-chart .executives {
+            align-items: flex-end;
+            margin-left: 11.5rem;
+        }
+
+        .quadrant-chart .self-employee {
+            align-items: flex-end;
+            margin-left: 2rem;
+        }
+
+        .quadrant-chart .business-owner {
+            align-items: flex-start;
+            margin-left: 1.5rem;
+        }
+
+        .quadrant-chart .investor {
+            align-items: flex-start;
+            margin-left: 7rem;
+        }
+
+        .quadrant-chart-info-title.lightbrown {
+            background-color: transparent;
+            color: #EA7A3A;
+        }
+
+        .quadrant-chart-info-title.red {
+            background-color: transparent;
+            color: #FE0002;
+        }
+
+        .quadrant-chart-info-title.lightblue {
+            background-color: transparent;
+            color: #2E75B5;
+        }
+
+        .quadrant-chart-info-title.yellow {
+            background-color: transparent;
+            color: #FFC000;
+        }
+
+        .quadrant-chart-info.executives {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 4%;
+            top: 22.5%;
+        }
+
+        .quadrant-chart-info.executives .quadrant-chart-info-box {
+            background-color: white;
+        }
+
+        .quadrant-chart-info.self-employee {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 16%;
+            bottom: 42%;
+        }
+
+        .quadrant-chart-info.self-employee .quadrant-chart-info-box {
+            height: 60px;
+            background-color: white;
+        }
+
+        .quadrant-chart-info.business-owner {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 13%;
+            bottom: 26%;
+        }
+
+        .quadrant-chart-info.business-owner .quadrant-chart-info-box {
+            height: 50px;
+            background-color: white;
+        }
+
+        .quadrant-chart-info.investor {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 4%;
+            top: 86%;
+        }
+
+        .quadrant-chart-info.investor .quadrant-chart-info-box {
+            height: 60px;
+            background-color: white;
+        }
+
+        .quadrant-chart-info .quadrant-chart-info-box {
+            width: 300px;
+            height: 90px;
+            border: solid 3px #8C2D35;
+            padding: 5px;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+
+        .quadrant-chart-info-list .quadrant-chart-info-box {
+            width: 300px;
+            height: 90px;
+            border: solid 3px #8C2D35;
+            padding: 5px;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+
+        .page-seven .page-info-container {
+            width: 90%;
+            display: flex;
+            justify-content: flex-start;
+            color: #0C1E5C;
+        }
+
+        .page-info-container span {
+            color: #8C2D35;
+        }
+
+        .page-eight .explanation {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .lightbrown-box {
+            width: 33rem;
+            line-height: 18px;
+            font-size: 11px;
+            background-color: #EC7E31;
+            color: white;
+            padding: 5px;
+        }
+
+        .explanation-box {
+            width: 33rem;
+            line-height: 18px;
+            font-size: 11px;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        .explanation-title {
+            width: 16rem;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            background-color: #F8C802;
+        }
+
+        .page-eleven .main {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .pola-kepribadian {
+            display: flex;
+            position: relative;
+            width: 40rem;
+            height: 50rem;
+        }
+
+        .pola-kepribadian-chart {
+            background-color: #FFC000;
+            width: 100%;
+            height: rem;
+        }
+
+        .analitis-tegas {
+            width: 10rem;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            top: 3%;
+        }
+
+        .analitis-tegas .text {
+            font-size: 10px;
+            text-align: justify;
+        }
+
+        .analitis-tegas .title {
+            font-size: 12px;
+            text-align: center;
+            background-color: #387AB7;
+            width: 7rem;
+            margin-top: 2px;
+            color: white;
+        }
+
+        .sangat-analitis.text {
+            width: 10rem;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            top: 4%;
+            left: 2%;
+            font-size: 10px;
+            text-align: justify;
+        }
+
+        .title-pemikir {
+            font-size: 12px;
+            text-align: center;
+            width: 7rem;
+            letter-spacing: 2px;
+            display: flex;
+            position: absolute;
+            left: 21%;
+            top: 17%;
+            transform: rotate(-38deg);
+        }
+
+        .sangat-analitis.title {
+            font-size: 12px;
+            text-align: center;
+            background-color: #F9C12A;
+            width: 7rem;
+            transform: rotate(-38deg);
+            color: black;
+            display: flex;
+            justify-content: center;
+            top: 24%;
+            left: 20%;
+            position: absolute;
+        }
+
+        .sangat-analitis .title-pemikir span {
+            font-size: 20px;
+        }
+
+        .mendukung-analitis.text {
+            width: 12rem;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: flex-start;
+            top: 37.5%;
+            left: 1%;
+            font-size: 10px;
+            text-align: justify;
+            width: 6rem;
+        }
+
+        .mendukung-analitis.title {
+            font-size: 9px;
+            text-align: center;
+            background-color: #83AA51;
+            padding: 3px;
+            width: 6.8rem;
+            transform: rotate(-90deg);
+            color: black;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            left: 11%;
+            top: 47%;
+        }
+
+        .sangat-mendukung.text {
+            font-size: 10px;
+            text-align: justify;
+            width: 8rem;
+            display: flex;
+            position: absolute;
+            bottom: 2%;
+            left: 1%;
+        }
+
+        .sangat-mendukung.title {
+            font-size: 10px;
+            text-align: center;
+            background-color: #3F5622;
+            padding: 3px;
+            width: 8rem;
+            margin-left: 10rem;
+            transform: rotate(38deg);
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            bottom: 24.5%;
+            right: 61%;
+            color: white;
+        }
+
+        .title-sangat-mendukung {
+            color: #3F5622;
+            display: flex;
+            position: absolute;
+            bottom: 21%;
+            left: 20%;
+            transform: rotate(38deg);
+            font-size: 14px;
+        }
+
+        .mendukung-mempengaruhi.text {
+            font-size: 10px;
+            text-align: justify;
+            width: 13rem;
+            display: flex;
+            position: absolute;
+            bottom: 5%;
+            right: 33%;
+        }
+
+        .mendukung-mempengaruhi.title {
+            font-size: 9px;
+            text-align: center;
+            background-color: #845811;
+            padding: 3px;
+            width: 9rem;
+            margin-left: 10rem;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            bottom: 14.8%;
+            right: 38%;
+            color: white;
+        }
+
+        .sangat-mempengaruhi.text {
+            font-size: 10px;
+            text-align: justify;
+            width: 8rem;
+            display: flex;
+            position: absolute;
+            bottom: 10%;
+            right: 1%;
+        }
+
+        .sangat-mempengaruhi.title {
+            font-size: 10px;
+            text-align: center;
+            background-color: #B15B2A;
+            padding: 3px;
+            width: 8rem;
+            transform: rotate(-38deg);
+            margin-left: 10rem;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            bottom: 24.4%;
+            right: 18%;
+            color: white;
+        }
+
+        .title-sangat-mempengaruhi {
+            display: flex;
+            font-size: 14px;
+            position: absolute;
+            color: #B15B2A;
+            bottom: 21%;
+            right: 21.5%;
+            transform: rotate(-38deg);
+        }
+
+        .tegas-mempengaruhi.text {
+            font-size: 10px;
+            text-align: justify;
+            width: 6rem;
+            display: flex;
+            position: absolute;
+            bottom: 35%;
+            right: 2%;
+        }
+
+        .tegas-mempengaruhi.title {
+            font-size: 8.5px;
+            text-align: center;
+            background-color: #EC4734;
+            padding: 3px;
+            width: 6.7rem;
+            transform: rotate(90deg);
+            margin-left: 10rem;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            bottom: 48.5%;
+            right: 11%;
+            color: white;
+        }
+
+        .sangat-tegas.text {
+            font-size: 10px;
+            text-align: justify;
+            width: 7rem;
+            display: flex;
+            position: absolute;
+            top: 3%;
+            right: 7%;
+        }
+
+        .sangat-tegas.title {
+            font-size: 11px;
+            text-align: center;
+            background-color: #002765;
+            padding: 3px;
+            width: 5rem;
+            transform: rotate(38deg);
+            margin-left: 10rem;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            top: 23%;
+            right: 22%;
+            color: white;
+        }
+
+        .title-sangat-tegas {
+            display: flex;
+            position: absolute;
+            color: #002765;
+            right: 21%;
+            top: 19%;
+            transform: rotate(38deg);
+        }
+
+        .m-or-d {
+            display: flex;
+            position: absolute;
+            top: 4.2%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .m {
+            display: flex;
+            position: absolute;
+            top: 8%;
+            left: 31%;
+            font-size: 12px;
+            transform: rotate(-38deg);
+            font-weight: bold;
+        }
+
+        .p-or-m {
+            display: flex;
+            position: absolute;
+            top: 17%;
+            left: 22.3%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .p {
+            display: flex;
+            position: absolute;
+            top: 26%;
+            left: 30%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .s-or-p {
+            display: flex;
+            position: absolute;
+            top: 30.5%;
+            left: 48.5%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .s {
+            display: flex;
+            position: absolute;
+            top: 26%;
+            right: 30%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .d-or-s {
+            display: flex;
+            position: absolute;
+            top: 17%;
+            right: 22.3%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .d {
+            display: flex;
+            position: absolute;
+            top: 8%;
+            right: 31%;
+            font-size: 12px;
+            transform: rotate(38deg);
+            font-weight: bold;
+        }
+
+        .d-m-star {
+            display: flex;
+            position: absolute;
+            top: 7.3%;
+            right: 45.3%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .s-p-star {
+            display: flex;
+            position: absolute;
+            top: 27.4%;
+            right: 42.5%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .m-d-star {
+            display: flex;
+            position: absolute;
+            top: 7.3%;
+            right: 51%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .p-s-star {
+            display: flex;
+            position: absolute;
+            top: 27.4%;
+            right: 50.5%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .m-d {
+            display: flex;
+            position: absolute;
+            top: 9.3%;
+            left: 37%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .s-p {
+            display: flex;
+            position: absolute;
+            top: 25.4%;
+            right: 36%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .m-p {
+            display: flex;
+            position: absolute;
+            top: 12%;
+            left: 31.5%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .s-d {
+            display: flex;
+            position: absolute;
+            top: 22.4%;
+            right: 30.5%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .m-p-star {
+            display: flex;
+            position: absolute;
+            top: 16%;
+            left: 29%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .s-d-star {
+            display: flex;
+            position: absolute;
+            top: 17.8%;
+            right: 28.5%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .p-m-star {
+            display: flex;
+            position: absolute;
+            top: 20%;
+            left: 29%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .d-s-star {
+            display: flex;
+            position: absolute;
+            top: 14.4%;
+            right: 28.5%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .p-m {
+            display: flex;
+            position: absolute;
+            top: 23.3%;
+            left: 33%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .d-s {
+            display: flex;
+            position: absolute;
+            top: 11%;
+            right: 32.8%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .p-s {
+            display: flex;
+            position: absolute;
+            top: 26%;
+            left: 38.4%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .d-m {
+            display: flex;
+            position: absolute;
+            top: 8.3%;
+            right: 39%;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .d-m-star-s {
+            display: flex;
+            position: absolute;
+            top: 9.9%;
+            right: 45.8%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .s-p-star-d {
+            display: flex;
+            position: absolute;
+            top: 24.2%;
+            right: 44.5%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .m-d-star-p {
+            display: flex;
+            position: absolute;
+            top: 9.9%;
+            left: 45.8%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .s-p-d {
+            display: flex;
+            position: absolute;
+            top: 22.4%;
+            right: 40%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .m-d-p {
+            display: flex;
+            position: absolute;
+            top: 11%;
+            left: 41.2%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .s-d-p {
+            display: flex;
+            position: absolute;
+            top: 20.5%;
+            right: 36.2%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .m-p-d {
+            display: flex;
+            position: absolute;
+            top: 13.4%;
+            left: 36.5%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .s-d-star-p {
+            display: flex;
+            position: absolute;
+            top: 17.8%;
+            right: 34.2%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .m-p-star-d {
+            display: flex;
+            position: absolute;
+            top: 16.4%;
+            left: 34.6%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .d-s-star-m {
+            display: flex;
+            position: absolute;
+            top: 15.3%;
+            right: 34.2%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .p-m-star-s {
+            display: flex;
+            position: absolute;
+            top: 18.8%;
+            left: 34.6%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .d-s-m {
+            display: flex;
+            position: absolute;
+            top: 12.8%;
+            right: 36.8%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .p-m-s {
+            display: flex;
+            position: absolute;
+            top: 21.4%;
+            left: 37.4%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .d-m-s {
+            display: flex;
+            position: absolute;
+            top: 10.8%;
+            right: 41%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .p-s-m {
+            display: flex;
+            position: absolute;
+            top: 23.4%;
+            left: 40.8%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .p-s-star-m {
+            display: flex;
+            position: absolute;
+            top: 24.2%;
+            right: 50.5%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .d-m-p {
+            display: flex;
+            position: absolute;
+            top: 12.2%;
+            right: 46.3%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .s-p-m {
+            display: flex;
+            position: absolute;
+            top: 22%;
+            right: 46.5%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .m-d-s {
+            display: flex;
+            position: absolute;
+            top: 12.2%;
+            left: 46.8%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .s-m-p {
+            display: flex;
+            position: absolute;
+            top: 21.4%;
+            right: 43%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .m-s-d {
+            display: flex;
+            position: absolute;
+            top: 13%;
+            left: 43.8%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .s-m-d {
+            display: flex;
+            position: absolute;
+            top: 19.8%;
+            right: 40%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .s-d-m {
+            display: flex;
+            position: absolute;
+            top: 17.8%;
+            right: 39%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .m-s-p {
+            display: flex;
+            position: absolute;
+            top: 14.3%;
+            left: 41.3%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .d-s-p {
+            display: flex;
+            position: absolute;
+            top: 16%;
+            right: 39%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .m-p-s {
+            display: flex;
+            position: absolute;
+            top: 16.5%;
+            left: 39.8%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .d-p-s {
+            display: flex;
+            position: absolute;
+            top: 14.4%;
+            right: 40.5%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .p-m-d {
+            display: flex;
+            position: absolute;
+            top: 18.3%;
+            left: 39.8%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .d-p-m {
+            display: flex;
+            position: absolute;
+            top: 13%;
+            right: 43%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .p-d-m {
+            display: flex;
+            position: absolute;
+            top: 19.8%;
+            left: 40.8%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .p-d-s {
+            display: flex;
+            position: absolute;
+            top: 21%;
+            left: 43.6%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .p-s-d {
+            display: flex;
+            position: absolute;
+            top: 22%;
+            left: 47.6%;
+            font-size: 8px;
+            font-weight: bold;
+        }
+
+        .p-d {
+            display: flex;
+            position: absolute;
+            top: 19.4%;
+            left: 47.8%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .s-m {
+            display: flex;
+            position: absolute;
+            top: 19.4%;
+            right: 47%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .d-p {
+            display: flex;
+            position: absolute;
+            top: 14.4%;
+            right: 47%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .m-s {
+            display: flex;
+            position: absolute;
+            top: 14.4%;
+            left: 47.4%;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .pola-kepribadian {
+            width: 40rem;
+            height: 28rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bfv-analysis {
+            width: 38rem;
+            line-height: 18px;
+            text-align: justify;
+            font-size: 12px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .bfv-analysis .bfv-analysis-title {
+            padding: 2px;
+            background-color: #FFF2CD;
+            width: 6rem;
+        }
+
+        .bfv-analysis table {
+            margin-top: 8px;
+            width: 100%;
+            background-color: #FFF2CD;
+        }
+
+        .bfv-analysis table,
+        .bfv-analysis td {
+            font-size: 7.5px;
+            border: solid 1px;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #FFF2CD;
+        }
+
+        .bfv-analysis .grey-box {
+            margin-top: 10px;
+        }
+
+        .bfv-analysis .grey-box p {
+            font-size: 11px;
+        }
+
+        .page-twelve .main {
+            width: 100%;
+        }
+
+        .al-quran-potential {
+            width: 38rem;
+            line-height: 18px;
+            text-align: justify;
+            font-size: 12px;
+            padding: 5px;
+        }
+
+        .al-quran-potential .al-quran-potential-title {
+            padding: 2px;
+            background-color: #D15408;
+            width: 13rem;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .al-quran-potential .al-quran-potential-content {
+            background-color: #AFABAA;
+            padding: 5px;
+            line-height: 24px;
+        }
+
+        .al-quran-potential .al-quran-potential-table table {
+            margin-top: 8px;
+            width: 100%;
+            font-size: 10px;
+        }
+
+        .al-quran-potential .al-quran-potential-table table,
+        .al-quran-potential-table td {
+            border: solid 1px;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #95C1E8;
+        }
+
+        .al-quran-potential .al-quran-potential-table tr:nth-child(1) td {
+            background-color: white;
+        }
+
+        .al-quran-potential .al-quran-potential-table tr:nth-child(1) td:nth-child(1) {
+            border-top: hidden;
+            border-left: hidden;
+            background-color: white;
+        }
+
+        .al-quran-potential .al-quran-potential-table tr:nth-child(2) td:nth-child(9) {
+            background-color: white;
+        }
+
+        .al-quran-potential .al-quran-potential-table tr:nth-child(2) td:nth-child(1),
+        .al-quran-potential-table tr:nth-child(2) td:nth-child(5) {
+            background-color: white;
+        }
+
+        .al-quran-potential .al-quran-potential-table tr:nth-child(2) td:nth-child(7),
+        .al-quran-potential-table tr:nth-child(3) td:nth-child(7) {
+            background-color: white;
+        }
+
+        .al-quran-potential .al-quran-potential-table tr:nth-child(3) td:nth-child(1) {
+            background-color: white;
+        }
+
+        .al-quran-potential .second-table tr:nth-child(2) td:nth-child(9) {
+            background-color: #95C1E8;
+        }
+
+        .al-quran-potential .second-table tr:nth-child(2) td:nth-child(5) {
+            background-color: #95C1E8;
+        }
+
+        .al-quran-potential .second-table tr:nth-child(2) td:nth-child(7),
+        .second-table tr:nth-child(3) td:nth-child(7) {
+            background-color: #95C1E8;
+        }
+
+        .al-quran-potential .second-table table,
+        .second-table td {
+            background-color: #95C1E8;
+        }
+
+        .al-quran-potential .al-quran-potential-table-info {
+            background-color: #FBAC7E;
+            padding: 5px;
+            margin-top: 10px;
+            line-height: 18px;
+        }
+
+        .more-table-info {
+            width: 38rem;
+        }
+
+        .more-table-info .table-info-box {
+            border: solid 2px #031D5B;
+            padding: 5px;
+            line-height: 14px;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .more-table-info .table-info-box.odd {
+            background-color: #FFF1CA;
+        }
+
+        .more-table-info .table-info-box.even {
+            background-color: #FFE699;
+        }
+    </style>
+
     <!-- Chart -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -2882,7 +5980,771 @@
     </div>
     <!-- Halaman empat belas -->
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            const data = google.visualization.arrayToDataTable([
+                ["Character", "Precentage"],
+                ["Pemikir", 31],
+                ["Direktur", 15],
+                ["Sosialita", 15],
+                ["Pendamai", 39],
+            ]);
+
+            const options = {
+                title: "Character",
+                is3D: true,
+            };
+
+            const chart = new google.visualization.PieChart(
+                document.getElementById("piechart")
+            );
+
+            chart.draw(data, options);
+        }
+
+        function drawChart2() {
+            // setup
+            Chart.defaults.font.size = 11;
+            const data = {
+                labels: [
+                    ["Written", "Communication"],
+                    ["Oral", "Communication"]
+                ],
+                datasets: [
+                    {
+                        label: "Communication Potential",
+                        data: [76, 60],
+                        backgroundColor: ["rgba(1, 32, 96, 1)", "rgba(237, 125, 49, 1)"],
+                        borderWidth: 1,
+                    },
+                ],
+            };
+
+            // config
+            const config = {
+                type: "bar",
+                data,
+                options: {
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "y",
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            },
+                        },
+                    },
+                },
+            };
+
+            // render init block
+            const myChart = new Chart(document.getElementById("myChart"), config);
+        }
+
+        function drawChart3() {
+            // setup 
+            const data = {
+                labels: [
+                    'Processing',
+                    'Energy',
+                    ['Work', 'Standard'],
+                    ['Follow', 'Up'],
+                    ['Information', 'Monitoring'],
+                    ['Attention', 'to Detail'],
+                    'Innitiative',
+                    ['Technical', 'Ability']
+                ],
+                datasets: [{
+                    label: 'Weekly Sales',
+                    data: [75, 47, 60, 60, 68, 73, 48, 75],
+                    backgroundColor: [
+                        'rgba(254, 0, 0, 1)',
+                        'rgba(255, 192, 0, 1)',
+                        'rgba(237, 125, 49, 1)',
+                        'rgba(90, 155, 213, 1)',
+                        'rgba(83, 130, 52, 1)',
+                        'rgba(45, 85, 155, 1)',
+                        'rgba(112, 48, 160, 1)',
+                        'rgba(112, 173, 70, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(254, 0, 0, 0.3)',
+                        'rgba(255, 192, 0, 0.3)',
+                        'rgba(237, 125, 49, 0.3)',
+                        'rgba(90, 155, 213, 0.3)',
+                        'rgba(83, 130, 52, 0.3)',
+                        'rgba(45, 85, 155, 0.3)',
+                        'rgba(112, 48, 160, 0.3)',
+                        'rgba(112, 173, 70, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: 9
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            // render init block
+            const myChart2 = new Chart(
+                document.getElementById('myChart2'),
+                config
+            );
+        }
+
+        function drawChart4() {
+            // setup
+            const data = {
+                labels: [
+                    ['Individual', 'Leadership'],
+                    ['Strategic', 'Leadership'],
+                    ['Managerial', 'Leadership'],
+                    ['Coaching'],
+                    ['Judgement'],
+                    ['Risk', 'Taking'],
+                    ['Organizational', 'Awareness']],
+                datasets: [{
+                    label: 'Leadership Potential',
+                    data: [50, 70, 55, 70, 55, 50, 75],
+                    backgroundColor: [
+                        'rgba(237, 125, 49, 1)',
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(132, 60, 12, 1)',
+                        'rgba(0, 176, 240, 1)',
+                        'rgba(84, 130, 53, 1)',
+                        'rgba(112, 48, 160, 1)',
+                        'rgba(47, 85, 151, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(237, 125, 49, 0.3)',
+                        'rgba(255, 0, 0, 0.3)',
+                        'rgba(132, 60, 12, 0.3)',
+                        'rgba(0, 176, 240, 0.3)',
+                        'rgba(84, 130, 53, 0.3)',
+                        'rgba(112, 48, 160, 0.3)',
+                        'rgba(47, 85, 151, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: 9.4
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart3'),
+                config
+            );
+        }
+
+        function drawChart5() {
+            // setup 
+            const data = {
+                labels: ['Analysis', 'Creating', 'Learning Ability', 'Innovation'],
+                datasets: [{
+                    label: 'Creativity Potential',
+                    data: [55, 72, 68, 50],
+                    backgroundColor: [
+                        'rgba(254, 0, 0, 1)',
+                        'rgba(112, 48, 160, 1)',
+                        'rgba(131, 61, 12, 1)',
+                        'rgba(195, 92, 17, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(254, 0, 0, 0.3)',
+                        'rgba(112, 48, 160, 0.3)',
+                        'rgba(131, 61, 12, 0.3)',
+                        'rgba(195, 92, 17, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "y",
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            },
+                        },
+                    }
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart4'),
+                config
+            );
+        }
+
+        function drawChart6() {
+            // setup 
+            const data = {
+                labels: ['Team Player', 'Influencing', 'Persuasiveness'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [70, 50, 65],
+                    backgroundColor: [
+                        'rgba(90, 155, 213, 1)',
+                        'rgba(68, 115, 197, 1)',
+                        'rgba(47, 85, 149, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(90, 155, 213, 0.3)',
+                        'rgba(68, 115, 197, 0.3)',
+                        'rgba(47, 85, 149, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "y",
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            },
+                        },
+                    }
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart5'),
+                config
+            );
+        }
+
+        function drawChart7() {
+            // setup 
+            const data = {
+                labels: ['Adaptability', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [51, 49],
+                    backgroundColor: [
+                        'rgba(49, 84, 150, 1)',
+                        'rgba(213, 220, 226, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart6'),
+                config
+            );
+        }
+
+        function drawChart8() {
+            // setup 
+            const data = {
+                labels: ['Stress Tollerance', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [57, 43],
+                    backgroundColor: [
+                        'rgba(239, 126, 47, 1)',
+                        'rgba(249, 219, 204, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart7'),
+                config
+            );
+        }
+
+        function drawChart9() {
+            // setup 
+            const data = {
+                labels: ['Tenacity', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [60, 40],
+                    backgroundColor: [
+                        'rgba(253, 1, 4, 1)',
+                        'rgba(249, 205, 202, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart8'),
+                config
+            );
+        }
+
+        function drawChart10() {
+            // setup 
+            const data = {
+                labels: ['Executives', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [57, 43],
+                    backgroundColor: [
+                        'rgba(197, 91, 16, 1)',
+                        'rgba(234, 234, 234, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart9'),
+                config
+            );
+        }
+
+        function drawChart11() {
+            // setup 
+            const data = {
+                labels: ['Self Employed', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [60, 40],
+                    backgroundColor: [
+                        'rgba(254, 0, 2, 1)',
+                        'rgba(234, 234, 234, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart10'),
+                config
+            );
+        }
+
+        function drawChart12() {
+            // setup 
+            const data = {
+                labels: ['Busines Owner', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [50, 50],
+                    backgroundColor: [
+                        'rgba(46, 117, 181, 1)',
+                        'rgba(234, 234, 234, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart11'),
+                config
+            );
+        }
+
+        function drawChart13() {
+            // setup 
+            const data = {
+                labels: ['Busines Owner', 'none'],
+                datasets: [{
+                    label: 'Teamwork Potential',
+                    data: [30, 70],
+                    backgroundColor: [
+                        'rgba(255, 192, 0, 1)',
+                        'rgba(234, 234, 234, 1)'
+                    ]
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'doughnut',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "x",
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart12'),
+                config
+            );
+        }
+
+        function drawChart14() {
+            // setup 
+            const data = {
+                labels: ['Safety', 'Planing Organizing', 'Negotiation', 'Directing'],
+                datasets: [{
+                    label: 'Creativity Potential',
+                    data: [75, 60, 50, 60],
+                    backgroundColor: [
+                        'rgba(0, 32, 96, 1)',
+                        'rgba(0, 32, 96, 1)',
+                        'rgba(0, 32, 96, 1)',
+                        'rgba(0, 32, 96, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(0, 32, 96, 0.3)',
+                        'rgba(0, 32, 96, 0.3)',
+                        'rgba(0, 32, 96, 0.3)',
+                        'rgba(0, 32, 96, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    indexAxis: "y",
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            },
+                        },
+                    }
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart13'),
+                config
+            );
+        }
+
+        function drawChart15() {
+            const data = {
+                labels: ['Resillience', 'Persisting', 'Detailing'],
+                datasets: [{
+                    label: 'Leadership Potential',
+                    data: [50, 55, 60],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(132, 60, 12, 1)',
+                        'rgba(237, 125, 49, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 0.3)',
+                        'rgba(132, 60, 12, 0.3)',
+                        'rgba(237, 125, 49, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            }
+                        }
+                    }
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart14'),
+                config
+            );
+        }
+
+        function drawChart16() {
+            const data = {
+                labels: [
+                    ['Customer', 'Service'],
+                    ['Image &', 'impact'],
+                    'Integrity'],
+                datasets: [{
+                    label: 'Leadership Potential',
+                    data: [55, 48, 75],
+                    backgroundColor: [
+                        'rgba(68, 114, 196, 1)',
+                        'rgba(0, 176, 240, 1)',
+                        'rgba(0, 32, 96, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(68, 114, 196, 0.3)',
+                        'rgba(0, 176, 240, 0.3)',
+                        'rgba(0, 32, 96, 0.3)'
+                    ],
+                    borderWidth: 2
+                }]
+            };
+
+            // config 
+            const config = {
+                type: 'bar',
+                data,
+                options: {
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                title: (context) => {
+                                    console.log(context[0].label);
+                                    return context[0].label.replaceAll(',', ' ');
+                                }
+                            }
+                        }
+                    },
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                            }
+                        }
+                    }
+                }
+            };
+
+            // render init block
+            const myChart = new Chart(
+                document.getElementById('myChart15'),
+                config
+            );
+        }
+
+        window.onload = function () {
+            Chart.defaults.font.size = 10;
+
+            drawChart2();
+            drawChart3();
+            drawChart4();
+            drawChart5();
+            drawChart6();
+            drawChart7();
+            drawChart8();
+            drawChart9();
+            drawChart10();
+            drawChart11();
+            drawChart12();
+            drawChart13();
+            drawChart14();
+            drawChart15();
+            drawChart16();
+        }
+
+
+    </script>
 </body>
 
 </html>
